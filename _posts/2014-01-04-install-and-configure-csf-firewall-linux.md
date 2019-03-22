@@ -6,6 +6,7 @@ author: Balvinder Rawat
 tags:
   - csf
   - firewall
+imagefeature: install-csf.png
 modified_time: '2014-01-04T15:27:25.691+05:30'
 thumbnail: >-
   http://3.bp.blogspot.com/-T8XgsbBagfQ/Usfac0nvdQI/AAAAAAAAAys/sqZHhsgKGZA/s72-c/install-csf.png

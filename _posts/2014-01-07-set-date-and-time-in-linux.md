@@ -6,6 +6,7 @@ author: Balvinder Rawat
 tags:
   - set date
   - time
+imagefeature: date.png
 modified_time: '2014-01-07T12:46:22.744+05:30'
 thumbnail: >-
   http://2.bp.blogspot.com/-JwAjLVeqzGw/UqAQW7Am7XI/AAAAAAAAAvQ/Q3S4yIAJk2k/s72-c/date.png

@@ -7,6 +7,7 @@ tags:
   - centos6
   - apache
   - virtual host
+imagefeature: apachevirtualhosts.png
 modified_time: '2013-12-24T17:47:05.573+05:30'
 thumbnail: >-
   http://1.bp.blogspot.com/-b4rAq0N4xzw/Url7KWx_7VI/AAAAAAAAAyQ/MpFcyAwQ52s/s72-c/apachevirtualhosts.png

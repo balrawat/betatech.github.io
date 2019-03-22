@@ -5,6 +5,7 @@ date: '2014-02-11T14:40:00.002+05:30'
 author: Balvinder Rawat
 tags:
   - virtualbox
+imagefeature: virtualbox.png
 modified_time: '2019-03-15T22:24:48.439+05:30'
 thumbnail: >-
   https://3.bp.blogspot.com/-iIMM9y4UegY/UvnoXl9c_hI/AAAAAAAAA0g/E33ytjabFks/s72-c/virtualbox.png

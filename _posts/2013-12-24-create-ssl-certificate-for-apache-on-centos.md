@@ -9,6 +9,7 @@ tags:
   - ssl certificate
   - secure web server
   - https
+imagefeature: https.png
 modified_time: '2013-12-24T17:33:21.440+05:30'
 thumbnail: >-
   http://4.bp.blogspot.com/--423qayIOoI/Url318RK0UI/AAAAAAAAAyA/1hJ7-8pAsE8/s72-c/https.png
