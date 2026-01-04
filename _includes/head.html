@@ -4,7 +4,7 @@
 {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
 
 <!-- Security Headers -->
-<meta http-equiv="X-Frame-Options" content="DENY">
+<!-- Note: X-Frame-Options must be set via HTTP headers, not meta tags -->
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#333333">
