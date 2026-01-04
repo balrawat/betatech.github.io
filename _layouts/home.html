@@ -4,6 +4,7 @@
 {% include head.html %}
 </head>
 <body class="home-template" itemscope itemtype="http://schema.org/WebPage">
+<a href="#main-content" class="skip-link">Skip to main content</a>
 <header class="notepad-site-head">
     <div class="notepad-site-head-menu">
         <a class="notepad-blog-logo" href="{{ site.url }}"><img src="{{ site.url }}/images/{{ site.logo }}" alt="Blog Logo" /></a>
@@ -41,7 +42,7 @@
 </header>
 
 
-<main class="notepad-content" role="main">
+<main id="main-content" class="notepad-content" role="main">
 
             {{ content }}
 </main>
