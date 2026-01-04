@@ -20,7 +20,7 @@ blogger_orig_url: >-
 
 Config Server Firewall (or CSF) is a free and advanced firewall for most Linux distributions. In addition to the basic functionality of a firewall – filtering packets – CSF includes other security features, such as login/intrusion/flood detections. CSF includes UI integration for cPanel, DirectAdmin and Webmin, but this tutorial only covers the command line usage. CSF is able to recognize many attacks, such as port scans, SYN floods, and login brute force attacks on many services. It is configured to temporarily block clients who are detected to be attacking the cloud server.
 
-The full list of supported operating systems and features can be found on [ConfigServer's website][2].
+The full list of supported operating systems and features can be found on [ConfigServer's website] ConfigServer's website.
 
 This tutorial is written for Debian based distro, such as Debian and Ubuntu but should work on RHEL/CentOS also. The commands should be executed with root permissions, by logging in as root, or initiating a root shell with the following command if sudo is installed:
 
@@ -69,7 +69,7 @@ This setting provides protection against port flood attacks, such as denial of s
 
 Port knocking allows clients to establish connections a server with no ports open. The server allows clients connect to the main ports only after a successful port knock sequence. You may find this useful if you offer services which are available to only limited audience.
 
-[Read more about port knocking][3]
+[Read more about port knocking] Read more about port knocking
 
 ### Connection limit protection
 
@@ -154,75 +154,53 @@ Step 1: Configuring ports
 
 The less access there is to your Server, the more secure your server is. However, not all ports can be closed as the clients must be able to use your services. 
 
-  
-
 The ports opened by default are the following:
-
-  
 
 TCP_IN = "20,21,22,25,53,80,110,143,443,465,587,993,995"
 
-  
-
 TCP_OUT = "20,21,22,25,53,80,110,113,443"
 
-  
-
 UDP_IN = "20,21,53"
-
-  
 
 UDP_OUT = "20,21,53,113,123"
 
 Services using the open ports:
 
-  
+- Port 20: FTP data transfer
 
-  
+- Port 21: FTP control
 
-  
+- Port 22: Secure shell (SSH)
 
-· Port 20: FTP data transfer
+- Port 25: Simple mail transfer protocol (SMTP)
 
-· Port 21: FTP control
+- Port 53: Domain name system (DNS)
 
-· Port 22: Secure shell (SSH)
+- Port 80: Hypertext transfer protocol (HTTP)
 
-· Port 25: Simple mail transfer protocol (SMTP)
+- Port 110: Post office protocol v3 (POP3)
 
-· Port 53: Domain name system (DNS)
+- Port 113: Authentication service/identification protocol
 
-· Port 80: Hypertext transfer protocol (HTTP)
+- Port 123: Network time protocol (NTP)
 
-· Port 110: Post office protocol v3 (POP3)
+- Port 143: Internet message access protocol (IMAP)
 
-· Port 113: Authentication service/identification protocol
+- Port 443: Hypertext transfer protocol over SSL/TLS (HTTPS)
 
-· Port 123: Network time protocol (NTP)
+- Port 465: URL Rendesvous Directory for SSM (Cisco)
 
-· Port 143: Internet message access protocol (IMAP)
+- Port 587: E-mail message submission (SMTP)
 
-· Port 443: Hypertext transfer protocol over SSL/TLS (HTTPS)
+- Port 993: Internet message access protocol over SSL (IMAPS)
 
-· Port 465: URL Rendesvous Directory for SSM (Cisco)
-
-· Port 587: E-mail message submission (SMTP)
-
-· Port 993: Internet message access protocol over SSL (IMAPS)
-
-· Port 995: Post office protocol 3 over TLS/SSL (POP3S)
+- Port 995: Post office protocol 3 over TLS/SSL (POP3S)
 
 It is possible that you are not using all of these services, so you can close the ports that are not used. I would recommend closing all ports (removing port number form the list), and then adding the ports you need.
 
-  
-
 Below are port sets that should be opened if you are running the listed service:
 
-  
-
 On any server:
-
-  
 
 TCP_IN: 22,53
 
@@ -260,11 +238,7 @@ TCP_OUT: 3306
 
 Note: If you are using IPv6 for your services, you should also configure TCP6\_IN, TCP6\_OUT, UPD6\_IN, and UPD6\_OUT similarly to how IPv4 ports were configured earlier.
 
-  
-
-You can find a comprehensive list of TCP and UDP ports on [Wikipedia][5]. You should open the ports of all the services you use.
-
-  
+You can find a comprehensive list of TCP and UDP ports on [Wikipedia] Wikipedia. You should open the ports of all the services you use.
 
 Step 2: Additional settings
 
@@ -272,97 +246,67 @@ Step 2: Additional settings
 
 CSF offers a vast number of different options in its configuration files. Some of the most commonly used settings are explained below.
 
-  
+## 
 
-**
+## ICMP_IN
 
-**ICMP_IN**
-
-**
+## 
 
 Setting ICMP_IN to 1 allows ping to your server and 0 refuses are such requests. If you are hosting any public services, it is recommended to allow ICMP requests, as these can be used to determine whether or not your service is available.
 
-  
 
-**
+## ICMP\_IN\_LIMIT
 
-**ICMP\_IN\_LIMIT**
-
-**
+## 
 
 Sets the number of ICMP (ping) requests allowed from one IP address within a specified amount of time. There is usually no need to change the default value (1/s)
 
-  
 
-**
+## DENY\_IP\_LIMIT
 
-**DENY\_IP\_LIMIT**
-
-**
+## 
 
 Sets the number of blocked IP addresses CSF keeps track of. It is recommended to limit the number of denied IP addresses as having too many blocks may slow down the server performance.
 
-  
 
-**
+## DENY\_TEMP\_IP_LIMIT
 
-**DENY\_TEMP\_IP_LIMIT**
-
-**
+## 
 
 Same as above, but for temporary IP address blocks.
 
-  
 
-**
+## PACKET_FILTER
 
-**PACKET_FILTER**
-
-**
+## 
 
 Filter invalid, unwanted and illegal packets.
 
-  
 
-**
+## SYNFLOOD, SUNFLOOD\_RATE and SYNFLOOD\_BURST
 
-**SYNFLOOD, SUNFLOOD\_RATE and SYNFLOOD\_BURST**
-
-**
+## 
 
 This offers protection against SYN flood attacks. This slows down the initialization of every connection, so you should enable this only if you know that your server is under attack.
 
-  
 
-**
+## CONNLIMIT
 
-**CONNLIMIT**
-
-**
+## 
 
 Limits the number of concurrent active connections on port.
 
-  
-
 Value:
-
-  
 
 22;5;443;20
 
 would allow 5 concurrent connections on port 22 and 20 concurrent connections on port 443.
 
-  
 
-**
+## PORTFLOOD
 
-**PORTFLOOD**
-
-**
 
 Limits the number of connections per time interval that new connections can be made to specific ports. Value:
-
-  
 
 22;tcp;5;250
 
@@ -370,19 +314,11 @@ would limit block the IP address if more than 5 connections are established on p
 
 port1;protocol1;connection\_count1;time1,port2;protocol2;connection\_count2;time2
 
-  
-
-**More settings**
+## More settings
 
 CSF offers a wide range of settings which are not covered in this tutorial. The default values are generally good, and can be used on almost any server. The default settings are configured to prevent most flood attacks, port scans and unauthorized access attempts.
 
-  
-
 If you would, however, like to adjust the configuration in more detail, please read the comments in /etc/csf/csf.conf and edit them as you like. 
-
-  
-
-  
 
 Step 3: Applying the Changes
 
@@ -390,19 +326,11 @@ Step 3: Applying the Changes
 
 Whenever you are altering the settings in csf.conf, you should save the files and restart CSF in order for the changes to take effect. Once you are ready with the configuration, close the file by pressing Ctrl + X. When you are asked whether to save the changes or not, press Y to save the changes.
 
-  
-
 After this, you should apply the changes by restarting CSF with command:
-
-  
 
 csf -r
 
-  
-
 If everything went like planned, and you are still able to access the server, open the configuration file once more:
-
-  
 
 nano /etc/csf/csf.conf
 
@@ -410,11 +338,7 @@ and change setting TESTING at the beginning of the configuration file to 0 as sh
 
 TESTING = "0"
 
-  
-
 Save the file, and apply the changes with command:
-
-  
 
 csf -r
 
@@ -424,17 +348,12 @@ Blocking and Allowing IP Addresses
 
 One of the most basic features of a firewall is the ability to block certain IP addresses. You may deny (blacklist), allow (whitelist) or ignore IP addresses by editing the configuration files csf.deny, csf.allow and csf.ignore.
 
-  
+## 
 
-**
+## Blocking IP addresses
 
-**Blocking IP addresses**
-
-**
 
 If you would like to block an IP address or range, open csf.deny.
-
-  
 
 nano /etc/csf/csf.deny
 
@@ -442,43 +361,30 @@ Blocked IP addresses or ranges all reserve one line in csf.deny file. If you wou
 
 1.2.3.4
 
-[2.3.0.0/16][6]
+[2.3.0.0/16] 2.3.0.0/16
 
-IP ranges are represented using the [CIDR notation][7]
+IP ranges are represented using the [CIDR notation] CIDR notation
 
-  
+## 
 
-**
+## Allowing IP addresses
 
-**Allowing IP addresses**
-
-**
 
 If you would like an IP address or range to be excluded from all blocks and filters, you may add them to csf.allow file. Please note that allowed IP addresses are allowed even if they are explicitly blocked in csf.deny file.
 
-  
-
 Allowing IP addresses works similarly to blocking them. The only difference is that you should edit /etc/csf/csf.allow instead of csf.deny.
-
-  
 
 nano /etc/csf/csf.allow
 
-**Ignoring IP addresses**
+## Ignoring IP addresses
 
 CSF also offers ability to exclude IP addresses from the firewall filters. IP addresses in csf.ignore will bypass the firewall filters, and can only be blocked if listed in csf.deny file.
-
-  
 
 nano /etc/csf/csf.ignore
 
 In order to changes take effect, you should restart CSF after editing any of the files described above with command:
 
 csf -r
-
-  
-
-  
 
 [1]: https://www.configserver.com/cp/csf.html
 [2]: https://www.configserver.com/cp/csf.html

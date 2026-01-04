@@ -13,31 +13,23 @@ thumbnail: >-
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-3742909536503461890'
 blogger_orig_url: 'https://www.linuxtechtips.com/2013/11/dns-server-configuration-on-linux.html'
 ---
-[![](https://4.bp.blogspot.com/-bERkx9RU2hg/UnyJBwMVrLI/AAAAAAAAAn0/kVgaOwliJQA/s1600/DNS3.png)][1]
-
-  
+![](https://4.bp.blogspot.com/-bERkx9RU2hg/UnyJBwMVrLI/AAAAAAAAAn0/kVgaOwliJQA/s1600/DNS3.png)
 
 This article is a quick configuration manual of a Linux DNS server using bind.I believe thatbind do not need much introduction, butbefore you proceed with the installation and configuration of bind nameserver make sure that bind DNS server is exactly what you want. Default setup and execution of bind on Debian or Ubuntu may take around 200MB of RAM with no zones added to the config file. Unless you reduce the memory usage of a bind via various bind "options" config settings, be prepared to have some spare RAM available just for this service. This fact is even more important if you pay for your own VPS server.
-
-  
-
-  
 
 Another DNS nameservers available on a Linux systems are NSD ( Name Server Daemon) or djbdns ( tinydns ). Both are lightweight alternatives to bind9 DNS server and have less RAM requirements. Apparently are even faster.
 
 In this article we will not go into details of what Domain Name Service ( DNS ) is nor how DNS works. Rather we simply concentrate in a simple configuration of a custom zone and config file for a given domain / host supporting www, mail services.
 
-  
-
 Sample scenario notes to help you ready this DNS bind howto:
 
-· nameserver IP address 192.168.135.130
+- nameserver IP address 192.168.135.130
 
-· sample domain / host: linuxtechtips.com
+- sample domain / host: linuxtechtips.com
 
-· authoritative nameservers for a linuxtechtips.com zone: ns1.linuxtechtips.com ( 192.168.0.10 ) and ns2.linuxtechtips.com ( 192.168.0.11 )
+- authoritative nameservers for a linuxtechtips.com zone: ns1.linuxtechtips.com ( 192.168.0.10 ) and ns2.linuxtechtips.com ( 192.168.0.11 )
 
-· www and mail services for linuxtechtips.com will point to: 192.168.0.10
+- www and mail services for linuxtechtips.com will point to: 192.168.0.10
 
 1. bind9 nameserver installation
 
@@ -89,10 +81,6 @@ $TTL    3h
 
 @       IN      NS      ns2.linuxtechtips.com.
 
-  
-
-  
-
 linuxtechtips.com.    IN      MX      10      mail.linuxtechtips.com.
 
 linuxtechtips.com.    IN      A       192.168.0.10
@@ -109,13 +97,13 @@ ftp                     IN      CNAME   linuxtechtips
 
 Here is just a quick review of some lines from the above bind DNS zone file:
 
-· SOA Record: nameserver authoritative for a zone linuxtechtips.com is ns1.linuxtechtips.com and admin.linuxtechtips.com is an email address of a person responsible for this DNS zone.
+- SOA Record: nameserver authoritative for a zone linuxtechtips.com is ns1.linuxtechtips.com and admin.linuxtechtips.com is an email address of a person responsible for this DNS zone.
 
-· NS Records: two nameservers for a linuxtechtips.com zone are ns\[1,2\].linuxtechtips.com
+- NS Records: two nameservers for a linuxtechtips.com zone are ns\[1,2\].linuxtechtips.com
 
-· MX ( Mail Exchange): linuxtechtips.com mail exachange record. Number 10 means a preference for discarting a records A : A simply means address inanother words in linuxtechtips.com's zone a ns1 would ahve a A ( address ) 192.168.0.10.
+- MX ( Mail Exchange): linuxtechtips.com mail exachange record. Number 10 means a preference for discarting a records A : A simply means address inanother words in linuxtechtips.com's zone a ns1 would ahve a A ( address ) 192.168.0.10.
 
-· CNAME Record ( Canonical Name record ): restart the query using the canonical name instead of the original name
+- CNAME Record ( Canonical Name record ): restart the query using the canonical name instead of the original name
 
 3. address-to-name mappings
 
@@ -149,19 +137,17 @@ $TTL    604800
 
 0.168.192.in-addr.arpa.       IN      NS      ns2.linuxtechtips.com.
 
-  
-
 10.0.168.192.in-addr.arpa.   IN      PTR     linuxtechtips.com.
 
-· PTR: a NDS record used for a mapping of an IP address to a host name.
+- PTR: a NDS record used for a mapping of an IP address to a host name.
 
 4. Updating a BIND Configuration File
 
 At this point we should have two files ready:
 
-· /etc/bind/zones/master/db.linuxtechtips.com
+- /etc/bind/zones/master/db.linuxtechtips.com
 
-· /etc/bind/zones/master/db.192.168.0
+- /etc/bind/zones/master/db.192.168.0
 
 All we need to do now is to insert both zone file names into a bind's configuration file **named.conf.local. **To do that add following lines into this file:
 
@@ -172,8 +158,6 @@ zone "linuxtechtips.com" {
        file "/etc/bind/zones/master/db.linuxtechtips.com";
 
 };
-
-  
 
 zone "0.168.192.in-addr.arpa" {
 
@@ -251,8 +235,6 @@ dig command can be used from any PC which has a network access the your DNS serv
 
 dig @192.168.135.130 www.linuxtechtips.com
 
-  
-
 ; <<>\> DiG 9.6-ESV-R1 <<>> @192.168.135.130 www.linuxtechtips.com
 
 ; (1 server found)
@@ -265,13 +247,9 @@ dig @192.168.135.130 www.linuxtechtips.com
 
 ;; flags: qr aa rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 2, ADDITIONAL: 2
 
-  
-
 ;; QUESTION SECTION:
 
 ;www.linuxtechtips.com.           IN      A
-
-  
 
 ;; ANSWER SECTION:
 
@@ -279,23 +257,17 @@ www.linuxtechtips.com.    10800   IN      CNAME   linuxtechtips.com.
 
 linuxtechtips.com.        10800   IN      A       192.168.0.10
 
-  
-
 ;; AUTHORITY SECTION:
 
 linuxtechtips.com.        10800   IN      NS      ns2.linuxtechtips.com.
 
 linuxtechtips.com.        10800   IN      NS      ns1.linuxtechtips.com.
 
-  
-
 ;; ADDITIONAL SECTION:
 
 ns1.linuxtechtips.com.    10800   IN      A       192.168.0.10
 
 ns2.linuxtechtips.com.    10800   IN      A       192.168.0.11
-
-  
 
 ;; Query time: 0 msec
 
@@ -309,8 +281,6 @@ Next we test IP-to-host resolution:
 
 dig @192.168.135.130 -x 192.168.0.10
 
-  
-
 ; <<>\> DiG 9.6-ESV-R1 <<>> @192.168.135.130 -x 192.168.0.10
 
 ; (1 server found)
@@ -323,19 +293,13 @@ dig @192.168.135.130 -x 192.168.0.10
 
 ;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 2, ADDITIONAL: 2
 
-  
-
 ;; QUESTION SECTION:
 
 ;10.0.168.192.in-addr.arpa.     IN      PTR
 
-  
-
 ;; ANSWER SECTION:
 
 10.0.168.192.in-addr.arpa. 604800 IN    PTR     linuxtechtips.com.
-
-  
 
 ;; AUTHORITY SECTION:
 
@@ -343,15 +307,11 @@ dig @192.168.135.130 -x 192.168.0.10
 
 0.168.192.in-addr.arpa. 604800  IN      NS      ns1.linuxtechtips.com.
 
-  
-
 ;; ADDITIONAL SECTION:
 
 ns1.linuxtechtips.com.    10800   IN      A       192.168.0.10
 
 ns2.linuxtechtips.com.    10800   IN      A       192.168.0.11
-
-  
 
 ;; Query time: 0 msec
 
@@ -362,10 +322,6 @@ ns2.linuxtechtips.com.    10800   IN      A       192.168.0.11
 ;; MSG SIZE  rcvd: 140
 
 Congratulations, you have just created and configured your own DNS zone using bind nameserver.
-
-  
-
-  
 
 [1]: https://4.bp.blogspot.com/-bERkx9RU2hg/UnyJBwMVrLI/AAAAAAAAAn0/kVgaOwliJQA/s1600/DNS3.png
 

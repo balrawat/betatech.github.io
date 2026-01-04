@@ -15,21 +15,11 @@ blogger_orig_url: >-
 ---
 Quick and easisest way:
 
-  
-
-  
-
-wget [http://apt.sw.be/redhat/el5/en/x86\_64/rpmforge/RPMS//rpmforge-release-0.3.6-1.el5.rf.x86\_64.rpm][1]
+wget [http://apt.sw.be/redhat/el5/en/x86\`64/rpmforge/RPMS//rpmforge-release-0.3.6-1.el5.rf.x86\`64.rpm] http://apt.sw.be/redhat/el5/en/x86\`64/rpmforge/RPMS//rpmforge-release-0.3.6-1.el5.rf.x86\`64.rpm
 
 rpm -Uvh rpmforge-release-0.3.6-1.el5.rf.x86_64.rpm
 
 yum install ntop
-
-  
-
-  
-
-  
 
 \# Get yum ready
 
@@ -37,45 +27,21 @@ yum clean all
 
 yum update
 
-  
-
-  
-
-  
-
 \# Install Development Tools
 
 yum groupinstall “Development Tools”
-
-  
-
-  
-
-  
 
 \# Install more ntop Dependencies
 
 yum install libpcap-devel libpcap
 
-  
-
-  
-
-  
-
 \# Install RDD tools dependencies
 
 yum install cairo-devel libxml2-devel pango-devel pango libpng-devel freetype freetype-devel libart_lgpl-devel
 
-  
-
-  
-
-  
-
 \# Download, compile and install RDDTools
 
-wget [https://oss.oetiker.ch/rrdtool/pub/rrdtool-1.4.5.tar.gz][2]
+wget [https://oss.oetiker.ch/rrdtool/pub/rrdtool-1.4.5.tar.gz] https://oss.oetiker.ch/rrdtool/pub/rrdtool-1.4.5.tar.gz
 
 tar xvzf rrdtool-1.4.5.tar.gz
 
@@ -87,15 +53,9 @@ make
 
 make install
 
-  
-
-  
-
-  
-
 \# Download, compile and Install GeopIP
 
-wget [https://geolite.maxmind.com/download/geoip/api/c/GeoIP.tar.gz][3]
+wget [https://geolite.maxmind.com/download/geoip/api/c/GeoIP.tar.gz] https://geolite.maxmind.com/download/geoip/api/c/GeoIP.tar.gz
 
 tar xvzf GeoIP.tar.gz
 
@@ -107,19 +67,11 @@ cd GeoIP-1.4.6/
 
 ./make install
 
-  
-
-  
-
 NOTE: config at: /usr/local/etc/GeoIP.conf
-
-  
-
-  
 
 #Download, compile and install nTop 4.0.1
 
-wget [https://cdnetworks-us-1.dl.sourceforge.net/project/ntop/ntop/ntop-4.0.1/ntop-4.0.1.tar.gz][4]
+wget [https://cdnetworks-us-1.dl.sourceforge.net/project/ntop/ntop/ntop-4.0.1/ntop-4.0.1.tar.gz] https://cdnetworks-us-1.dl.sourceforge.net/project/ntop/ntop/ntop-4.0.1/ntop-4.0.1.tar.gz
 
 tar xvzf ntop4.0.1.tar.gz
 
@@ -133,12 +85,6 @@ make
 
 make install
 
-  
-
-  
-
-  
-
 \# Add ntop user and directory permissions.
 
 useradd -M -s /sbin/nologin -r ntop
@@ -147,33 +93,15 @@ chown -R ntop:root /usr/local/var/ntop/
 
 chown -R ntop:ntop /usr/local/share/ntop/
 
-  
-
-  
-
-  
-
 \# Set ntop password
 
 ntop -A
 
-  
-
 \# To start ntop on boot
-
-  
-
-  
 
 nano /etc/rc.local # and add: /usr/local/bin/ntop -i “eth0,eth1″ -d -L -u ntop -P /usr/local/
 
 you have multiple interface (eth0, eth1 and so on), start ntop as follows:
-
-  
-
-  
-
-  
 
 \# To start ntop
 
@@ -181,15 +109,7 @@ you have multiple interface (eth0, eth1 and so on), start ntop as follows:
 
 htpasswd -c /etc/httpd/.htpasswd segredes
 
-  
-
-  
-
 Where,
-
-  
-
-  
 
 \* -i “eth0,eth1″ : Specifies the network interface or interfaces to be used by ntop for network monitoring. Here you are monitoring eth0 and eth1.
 
@@ -205,15 +125,11 @@ Where,
 
 \* –use-syslog=daemon : Use syslog daemon.
 
-  
-
-  
-
 By default ntop listen on 3000 port. You can view ntop stats by visiting following url:
 
-[https://localhost:3000/][5]
+[https://localhost:3000/] https://localhost:3000/
 
-[1]: http://apt.sw.be/redhat/el5/en/x86_64/rpmforge/RPMS//rpmforge-release-0.3.6-1.el5.rf.x86_64.rpm
+[1]: http://apt.sw.be/redhat/el5/en/x86`64/rpmforge/RPMS//rpmforge-release-0.3.6-1.el5.rf.x86`64.rpm
 [2]: https://oss.oetiker.ch/rrdtool/pub/rrdtool-1.4.5.tar.gz
 [3]: https://geolite.maxmind.com/download/geoip/api/c/GeoIP.tar.gz
 [4]: https://cdnetworks-us-1.dl.sourceforge.net/project/ntop/ntop/ntop-4.0.1/ntop-4.0.1.tar.gz

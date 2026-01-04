@@ -13,7 +13,7 @@ blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-2142506593002609
 blogger_orig_url: >-
   https://www.linuxtechtips.com/2013/11/how-wildcards-work-in-linux-and-unix.html
 ---
-[![](https://4.bp.blogspot.com/-ORU9e-qu274/UpXroIkDMNI/AAAAAAAAAtM/WE-H5lA01E0/s400/wildcards-300x168.png)][1]
+![](https://4.bp.blogspot.com/-ORU9e-qu274/UpXroIkDMNI/AAAAAAAAAtM/WE-H5lA01E0/s400/wildcards-300x168.png)
 
 **Wildcards**
 -------------
@@ -24,29 +24,23 @@ The character*****is called a wildcard, and will match against none or more char
 
 **% ls list***
 
-This will list all files in the current directory starting with**list....**
+This will list all files in the current directory starting with## list....
 
 Try typing
 
 **% ls *list**
 
-This will list all files in the current directory ending with**....list**
+This will list all files in the current directory ending with## ....list
 
 ### The ? wildcard
 
 The character**?**will match exactly one character.
 
-  
-
 So**?ouse**will match files like**house**and**mouse**, but not**grouse**.
 
 Try typing
 
-  
-
-**% ls ?list**
-
-  
+## % ls ?list
 
 ** Filename conventions**
 -------------------------
@@ -68,11 +62,11 @@ There are on-line manuals which gives information about most commands. The manua
 
 For example, to find out more about the**wc**(word count) command, type
 
-**% man wc**
+## % man wc
 
 Alternatively
 
-**% whatis wc**
+## % whatis wc
 
 gives a one-line description of the command, but omits any information about options etc.
 
@@ -80,24 +74,16 @@ gives a one-line description of the command, but omits any information about opt
 
 When you are not sure of the exact name of a command,
 
-**% apropos keyword**
+## % apropos keyword
 
 will give you the commands with keyword in their manual page header. For example, try typing
 
-**% apropos copy**
+## % apropos copy
 
 **Summary**
 -----------
 
-  
-
 <table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border: 1pt outset rgb(153, 153, 153); text-align: justify;"><tbody><tr><td style="background: #ECE9D8; border: inset #999999 1.0pt; mso-border-alt: inset #999999 .75pt; padding: 3.0pt 3.0pt 3.0pt 3.0pt;"><div class="MsoNormal" style="line-height: 19.2pt; text-align: center;"><b><span style="color: #444444;"><span style="font-family: Verdana, sans-serif;">Command<o:p></o:p></span></span></b></div></td><td style="background: #ECE9D8; border: inset #999999 1.0pt; mso-border-alt: inset #999999 .75pt; padding: 3.0pt 3.0pt 3.0pt 3.0pt;"><div class="MsoNormal" style="line-height: 19.2pt; text-align: center;"><b><span style="color: #444444;"><span style="font-family: Verdana, sans-serif;">Meaning<o:p></o:p></span></span></b></div></td></tr><tr><td style="border: inset #999999 1.0pt; mso-border-alt: inset #999999 .75pt; padding: 3.0pt 3.0pt 3.0pt 3.0pt;"><div class="MsoNormal" style="line-height: 19.2pt;"><b><span style="font-family: Verdana, sans-serif;">*<o:p></o:p></span></b></div></td><td style="border: inset #999999 1.0pt; mso-border-alt: inset #999999 .75pt; padding: 3.0pt 3.0pt 3.0pt 3.0pt;"><div class="MsoNormal" style="line-height: 19.2pt;"><span style="font-family: Verdana, sans-serif;"><span style="color: #444444;">match any number of characters</span><span style="color: #444444;"><o:p></o:p></span></span></div></td></tr><tr><td style="border: inset #999999 1.0pt; mso-border-alt: inset #999999 .75pt; padding: 3.0pt 3.0pt 3.0pt 3.0pt;"><div class="MsoNormal" style="line-height: 19.2pt;"><b><span style="font-family: Verdana, sans-serif;">?<o:p></o:p></span></b></div></td><td style="border: inset #999999 1.0pt; mso-border-alt: inset #999999 .75pt; padding: 3.0pt 3.0pt 3.0pt 3.0pt;"><div class="MsoNormal" style="line-height: 19.2pt;"><span style="font-family: Verdana, sans-serif;"><span style="color: #444444;">match one character</span><span style="color: #444444;"><o:p></o:p></span></span></div></td></tr><tr><td style="border: inset #999999 1.0pt; mso-border-alt: inset #999999 .75pt; padding: 3.0pt 3.0pt 3.0pt 3.0pt;"><div class="MsoNormal" style="line-height: 19.2pt;"><b><span style="font-family: Verdana, sans-serif;">man<span class="apple-converted-space">&nbsp;</span><var>command</var><o:p></o:p></span></b></div></td><td style="border: inset #999999 1.0pt; mso-border-alt: inset #999999 .75pt; padding: 3.0pt 3.0pt 3.0pt 3.0pt;"><div class="MsoNormal" style="line-height: 19.2pt;"><span style="font-family: Verdana, sans-serif;"><span style="color: #444444;">read the online manual page for a command</span><span style="color: #444444;"><o:p></o:p></span></span></div></td></tr><tr><td style="border: inset #999999 1.0pt; mso-border-alt: inset #999999 .75pt; padding: 3.0pt 3.0pt 3.0pt 3.0pt;"><div class="MsoNormal" style="line-height: 19.2pt;"><b><span style="font-family: Verdana, sans-serif;">whatis<span class="apple-converted-space">&nbsp;</span><var>command</var><o:p></o:p></span></b></div></td><td style="border: inset #999999 1.0pt; mso-border-alt: inset #999999 .75pt; padding: 3.0pt 3.0pt 3.0pt 3.0pt;"><div class="MsoNormal" style="line-height: 19.2pt;"><span style="font-family: Verdana, sans-serif;"><span style="color: #444444;">brief description of a command</span><span style="color: #444444;"><o:p></o:p></span></span></div></td></tr><tr><td style="border: inset #999999 1.0pt; mso-border-alt: inset #999999 .75pt; padding: 3.0pt 3.0pt 3.0pt 3.0pt;"><div class="MsoNormal" style="line-height: 19.2pt;"><b><span style="font-family: Verdana, sans-serif;">apropos<span class="apple-converted-space">&nbsp;</span><var>keyword</var><o:p></o:p></span></b></div></td><td style="border: inset #999999 1.0pt; mso-border-alt: inset #999999 .75pt; padding: 3.0pt 3.0pt 3.0pt 3.0pt;"><div class="MsoNormal" style="line-height: 19.2pt;"><span style="font-family: Verdana, sans-serif;"><span style="color: #444444;">match commands with keyword in their man pages</span><span style="color: #444444;"><o:p></o:p></span></span></div></td></tr></tbody></table>
-
-  
-
-  
-
-  
 
 [1]: https://4.bp.blogspot.com/-ORU9e-qu274/UpXroIkDMNI/AAAAAAAAAtM/WE-H5lA01E0/s1600/wildcards-300x168.png
 

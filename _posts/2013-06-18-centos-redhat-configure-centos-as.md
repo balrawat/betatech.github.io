@@ -12,17 +12,11 @@ thumbnail: >-
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-7884711947305370494'
 blogger_orig_url: 'https://www.linuxtechtips.com/2013/06/centos-redhat-configure-centos-as.html'
 ---
-[![](https://3.bp.blogspot.com/-peke76gt-wo/Uo7pDIYYeII/AAAAAAAAApo/3Teg6vx8BNU/s1600/router.png)][1]
-
-  
+![](https://3.bp.blogspot.com/-peke76gt-wo/Uo7pDIYYeII/AAAAAAAAApo/3Teg6vx8BNU/s1600/router.png)
 
 Linux can be easily configured to share an internet connection using iptables. All you need to have is, two network interface cards as follows:
 
-  
-
 a) Your internal (LAN) network connected via eth0 with static ip address 192.168.0.1
-
-  
 
 b) Your external WAN) network is connected via eth1 with static ip address 10.10.10.1  ( public IP provided by ISP )
 
@@ -35,40 +29,24 @@ Login as the root user. Open /etc/sysctl.conf file
 
 \# vi /etc/sysctl.conf
 
-  
-
 Add the following line to enable packet forwarding for IPv4:
 
 net.ipv4.conf.default.forwarding=1
-
-  
 
 Save and close the file. Restart networking:
 
 \# service network restart
 
-  
-
 Step # 2: Enable IP masquerading
 --------------------------------
 
-  
-
 In Linux networking, Network Address Translation (NAT) or Network Masquerading (IP Masquerading) is a technique of transceiving network traffic through a router that involves re-writing the source and/or destination IP addresses and usually also the TCP/UDP port numbers of IP packets as they pass through. In short, IP masquerading is used to share the internet connection.
-
-  
 
 ### Share internet connection
 
 To share network connection via eth1, enter the following rule at command prompt (following useful for ppp0 or dial up connection):
 
-  
-
-  
-
 \# service iptables stop
-
-  
 
 \# iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE
 
@@ -76,27 +54,13 @@ To share network connection via eth1, enter the following rule at command prompt
 
 \# service iptables restart
 
-  
-
 Make sure Iptables runs on boot
-
-  
 
 \# chkconfig iptables on
 
-  
-
-  
-
 Open your Windows / Mac / Linux computer networking GUI tool and point router IP to 192.168.0.1 (eth0 Linux IP). You also need to setup DNS IP such as 8.8.8.8 or to your local DNS server IP. You should now able to ping or browse the internet:
 
-  
-
 \# ping google.com
-
-  
-
-  
 
 [1]: https://3.bp.blogspot.com/-peke76gt-wo/Uo7pDIYYeII/AAAAAAAAApo/3Teg6vx8BNU/s1600/router.png
 

@@ -13,11 +13,9 @@ blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-6207264198744482
 blogger_orig_url: >-
   https://www.linuxtechtips.com/2013/12/configure-postfix-to-use-gmail-in-linux.html
 ---
-  
 
-[![](https://1.bp.blogspot.com/-nat9AcEDuFA/UqAPDw5sdlI/AAAAAAAAAvE/zrfTca78BSU/s640/postfix-gmail.png)][1]
 
-  
+![](https://1.bp.blogspot.com/-nat9AcEDuFA/UqAPDw5sdlI/AAAAAAAAAvE/zrfTca78BSU/s640/postfix-gmail.png)
 
 Relaying to Gmail via smtp.gmail.com can be accomplished by configuring your Postfix with SASL authentication and TLS encryption.
 
@@ -25,15 +23,11 @@ The common errors you will encounter if sending from your postfix mail server fa
 
 @/var/log/maillog
 
-  
-
 -Must issue a STARTTLS command first
 
--certificate verification failed for gmail.com:unable to get local issuer certificate
+- Certificate verification failed for gmail.com:unable to get local issuer certificate
 
 -Authentication Required. Learn more at 530 5.5.1 https://mail.google.com/support/bin/answer.py?
-
-  
 
 How to fix?
 
@@ -47,8 +41,6 @@ b. Add these lines:
 
 smtp\_sasl\_security_options = noanonymous
 
-  
-
 relayhost = \[smtp.gmail.com\]:587
 
 smtp\_use\_tls = yes
@@ -58,8 +50,6 @@ smtp\_tls\_CAfile = /etc/postfix/cacert.pem
 smtp\_sasl\_auth_enable = yes
 
 smtp\_sasl\_password_maps = hash:/etc/postfix/sasl/passwd
-
-  
 
 c. Save and exit
 
@@ -73,13 +63,9 @@ Save and exit
 
 b. Change permission
 
-  
-
 #chmod 600 /etc/postfix/sasl/passwd
 
 c. Create lookup table via postmap
-
-  
 
 #postmap /etc/postfix/sasl/passwd
 
@@ -98,8 +84,6 @@ b.Create a key and test certificate in one file
 You will something like
 
 \[root@FLT certs\]# make hostname.pem
-
-  
 
 umask 77 ; \
 
@@ -155,8 +139,6 @@ Common Name (eg, your name or your server’s hostname) \[\]:
 
 Email Address \[\]:
 
-  
-
 c. Fill-up the necessary information and copy the file on /etc/postfix as cacert.pem
 
 #cp /etc/pki/tls/certs/hostname.pem /etc/postfix/cacert.pem
@@ -165,19 +147,11 @@ c. Fill-up the necessary information and copy the file on /etc/postfix as cacert
 
 #service postfix restart
 
-  
-
 5\. Inspect now your postfix logs to see if it can send out mails now to gmail servers
 
 A successful message states something like
 
-  
-
 May  3 17:35:00 FLT postfix/smtp\[28244\]: 0ABB61CE32A: to=<linuxtechtips-tutorials@gmail.com>, relay=smtp.gmail.com\[74.125.93.109\]:587, delay=5, delays=0.41/0.02/2.7/1.8, dsn=2.0.0, status=sent (250 2.0.0 OK 1272879300 8sm8902550qwj.38)
-
-  
-
-  
 
 [1]: https://1.bp.blogspot.com/-nat9AcEDuFA/UqAPDw5sdlI/AAAAAAAAAvE/zrfTca78BSU/s1600/postfix-gmail.png
 

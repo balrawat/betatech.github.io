@@ -22,52 +22,40 @@ The first step requires downloading some RPM files that contain the additional Y
 
 ****Centos 5.x****
 
-**wget https://dl.fedoraproject.org/pub/epel/5/i386/epel-release-5-4.noarch.rpm  
-wget https://rpms.famillecollet.com/enterprise/remi-release-5.rpm  
+**wget https://dl.fedoraproject.org/pub/epel/5/i386/epel-release-5-4.noarch.rpm
+wget https://rpms.famillecollet.com/enterprise/remi-release-5.rpm
 sudo rpm -Uvh remi-release-5*.rpm epel-release-5*.rpm **
 
-  
+## Centos 6.x
 
-**Centos 6.x**
-
-  
-
-**wget https://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm  
-wget https://rpms.famillecollet.com/enterprise/remi-release-6.rpm  
+**wget https://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+wget https://rpms.famillecollet.com/enterprise/remi-release-6.rpm
 sudo rpm -Uvh remi-release-6*.rpm epel-release-6*.rpm**
 
-  
+Once installed you should see some additional repo definitions under the_/etc/yum.repos.d_directory.
 
-Once installed you should see some additional repo definitions under the_/etc/yum.repos.d_directory.  
-  
-**$ ls -1 /etc/yum.repos.d/epel* /etc/yum.repos.d/remi.repo  
-/etc/yum.repos.d/epel.repo  
-/etc/yum.repos.d/epel-testing.repo  
+**$ ls -1 /etc/yum.repos.d/epel* /etc/yum.repos.d/remi.repo
+/etc/yum.repos.d/epel.repo
+/etc/yum.repos.d/epel-testing.repo
 /etc/yum.repos.d/remi.repo**
 
-**Enable the remi repository**
+## Enable the remi repository
 
 The remi repository provides a variety of up-to-date packages that are useful or are a requirement for many popular web-based services.  That means it generally is not a bad idea to enable the remi repositories by default.
 
-First, open the_/etc/yum.repos.d/remi.repo_repository file using a text editor of your choice:  
-  
+First, open the_/etc/yum.repos.d/remi.repo_repository file using a text editor of your choice:
+
 sudo vim /etc/yum.repos.d/remi.repo
 
-  
+Edit the**\[remi\]**portion of the file so that the_enabled_option is set to_1_.  This will enable the remi repository.
 
-  
-
-Edit the**\[remi\]**portion of the file so that the_enabled_option is set to_1_.  This will enable the remi repository.  
-  
-**name=Les RPM de remi pour Enterprise Linux $releasever - $basearch  
-#baseurl=https://rpms.famillecollet.com/enterprise/$releasever/remi/$basearch/  
-mirrorlist=https://rpms.famillecollet.com/enterprise/$releasever/remi/mirror  
-enabled=1  
-gpgcheck=1  
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi  
-failovermethod=priority**
-
-  
+## name=Les RPM de remi pour Enterprise Linux $releasever - $basearch
+#baseurl=https://rpms.famillecollet.com/enterprise/$releasever/remi/$basearch/
+mirrorlist=https://rpms.famillecollet.com/enterprise/$releasever/remi/mirror
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi
+failovermethod=priority
 
 You will now have a larger array of yum repositories to install from.
 

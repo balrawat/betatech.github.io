@@ -14,17 +14,17 @@ blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-8981667642659805
 blogger_orig_url: >-
   https://www.linuxtechtips.com/2013/11/configuring-nfs-on-centosredhat-linux.html
 ---
-[![](https://3.bp.blogspot.com/-InZP20sz6Eg/UnyC4Le6YtI/AAAAAAAAAnQ/lHDFDlXTnxI/s1600/nfs.png)][1]
+![](https://3.bp.blogspot.com/-InZP20sz6Eg/UnyC4Le6YtI/AAAAAAAAAnQ/lHDFDlXTnxI/s1600/nfs.png)
 
-**1. Introduction**
+## 1. Introduction
 
-The Network File System is certainly one of the most widely used network services. Network file system (NFS) is based on the[Remote procedure call][2]which allows the client to automatically mount remote file systems and therefore transparently provide an access to it as if the file system is local.
+The Network File System is certainly one of the most widely used network services. Network file system (NFS) is based on the [Remote procedure call] Remote procedure callwhich allows the client to automatically mount remote file systems and therefore transparently provide an access to it as if the file system is local.
 
-**2. Scenario**
+## 2. Scenario
 
 In this scenario we are going to export the file system from the an IP address 10.1.1.50 ( NFS server ) host and mount it on an a host with an IP address 10.1.1.55 ( NFS Client ). Both NFS server and NFS client will be running Ubuntu Linux.
 
-**3. Prerequisites**
+## 3. Prerequisites
 
 At this point, we assume that the NFS service daemon is already installed on your system, including portmap daemon on which NFS setup depends.
 
@@ -78,17 +78,17 @@ rpcinfo -p | grep portmap
 
     100000    2   udp    111  portmapper
 
-**4. Server export file**
+## 4. Server export file
 
 All directories we want to share over the network using NFS need to be defined on the server side of this communication and more specifically they need to be defind with /etc/exports file. In the next section you will see most common NFS exports:
 
-**4.1. Most common exports options**
+## 4.1. Most common exports options
 
 Here are the most common NFS export techniques and options:
 
 <table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse: collapse; text-align: justify;"><tbody><tr><td style="padding: 0in 0in 0in 0in; width: 300.0pt;" width="400"><div class="MsoNormal" style="margin: 7.5pt 0in;"><span style="font-size: 12pt;"><span style="font-family: Verdana, sans-serif;">/home/nfs/ 10.1.1.55(rw,sync)<o:p></o:p></span></span></div></td><td style="padding: 0in 0in 0in 0in;"><div class="MsoNormal" style="margin: 7.5pt 0in;"><span style="font-size: 12pt;"><span style="font-family: Verdana, sans-serif;">export /home/nfs directory for host with an IP address 10.1.1.55 with read, write permissions, and synchronized mode<o:p></o:p></span></span></div></td></tr><tr><td style="padding: 0in 0in 0in 0in;"><div class="MsoNormal" style="margin: 7.5pt 0in;"><span style="font-size: 12pt;"><span style="font-family: Verdana, sans-serif;">/home/nfs/ 10.1.1.0/24(ro,sync)<o:p></o:p></span></span></div></td><td style="padding: 0in 0in 0in 0in;"><div class="MsoNormal" style="margin: 7.5pt 0in;"><span style="font-size: 12pt;"><span style="font-family: Verdana, sans-serif;">export /home/nfs directory for network 10.1.1.0 with netmask 255.255.255.0 with read only permissions and synchronized mode<o:p></o:p></span></span></div></td></tr><tr><td style="padding: 0in 0in 0in 0in; width: 300.0pt;" width="400"><div class="MsoNormal" style="margin: 7.5pt 0in;"><span style="font-size: 12pt;"><span style="font-family: Verdana, sans-serif;">/home/nfs/ 10.1.1.55(rw,sync) 10.1.1.10(ro,sync)<o:p></o:p></span></span></div></td><td style="padding: 0in 0in 0in 0in;"><div class="MsoNormal" style="margin: 7.5pt 0in;"><span style="font-size: 12pt;"><span style="font-family: Verdana, sans-serif;">export /home/nfs directory for host with IP 10.1.1.55with read, write permissions, synchronized mode, and also export /home/nfs directory for another host with an IP address 10.1.1.10 with read only permissions and synchronized mode<o:p></o:p></span></span></div></td></tr><tr><td style="padding: 0in 0in 0in 0in; width: 300.0pt;" width="400"><div class="MsoNormal" style="margin: 7.5pt 0in;"><span style="font-size: 12pt;"><span style="font-family: Verdana, sans-serif;">/home/nfs/ 10.1.1.55(rw,sync,no_root_squash)<o:p></o:p></span></span></div></td><td style="padding: 0in 0in 0in 0in;"><div class="MsoNormal" style="margin: 7.5pt 0in;"><span style="font-size: 12pt;"><span style="font-family: Verdana, sans-serif;">export /home/nfs directory for host with an IP address 10.1.1.55with read, write permissions, synchronized mode and the remote root user will be treated as a root and will be able to change any file and directory.<o:p></o:p></span></span></div></td></tr><tr><td style="padding: 0in 0in 0in 0in; width: 300.0pt;" width="400"><div class="MsoNormal" style="margin: 7.5pt 0in;"><span style="font-size: 12pt;"><span style="font-family: Verdana, sans-serif;">/home/nfs/ *(ro,sync)<o:p></o:p></span></span></div></td><td style="padding: 0in 0in 0in 0in;"><div class="MsoNormal" style="margin: 7.5pt 0in;"><span style="font-size: 12pt;"><span style="font-family: Verdana, sans-serif;">export /home/nfs directory for any host with read only permissions and synchronized mode<o:p></o:p></span></span></div></td></tr><tr><td style="padding: 0in 0in 0in 0in; width: 300.0pt;" width="400"><div class="MsoNormal" style="margin: 7.5pt 0in;"><span style="font-size: 12pt;"><span style="font-family: Verdana, sans-serif;">/home/nfs/ *.linuxtechtips.com(ro,sync)<o:p></o:p></span></span></div></td><td style="padding: 0in 0in 0in 0in;"><div class="MsoNormal" style="margin: 7.5pt 0in;"><span style="font-size: 12pt;"><span style="font-family: Verdana, sans-serif;">export /home/nfs directory for any host within linuxtechtips.com domain with a read only permission and synchronized mode<o:p></o:p></span></span></div></td></tr><tr><td style="padding: 0in 0in 0in 0in; width: 300.0pt;" width="400"><div class="MsoNormal" style="margin: 7.5pt 0in;"><span style="font-size: 12pt;"><span style="font-family: Verdana, sans-serif;">/home/nfs/ foobar(rw,sync)<o:p></o:p></span></span></div></td><td style="padding: 0in 0in 0in 0in;"><div class="MsoNormal" style="margin: 7.5pt 0in;"><span style="font-size: 12pt;"><span style="font-family: Verdana, sans-serif;">export /home/nfs directory for hostname foobar with read, write permissions and synchronized mode<o:p></o:p></span></span></div></td></tr></tbody></table>
 
-**4.2. Edit exports file**
+## 4.2. Edit exports file
 
 Now that we have familiarized our selfs with some NFS's export options we can define our first NFS export. Open up your favorite text editor, for example, vim and edit /etc/exports file by adding a line /home/nfs/ *(ro,sync) which will export /home/nfs directory for any host with read only permissions. Instead of text editor you can simply insert your NFS export line into /etc/exports file using echo command:
 
@@ -104,7 +104,7 @@ Be sure that the directory you are about to export by NFS exists. You can also c
 
 **NOTE: **The default behavior of NFS kernel daemon is to include additional option to your export line which is "no\_subtree\_check". Be aware of this fact when you attempt to configure your NFS exports further.
 
-**4.3. Restart NFS daemon**
+## 4.3. Restart NFS daemon
 
 Once you have edited /etc/exports file you need to restart your NFS daemon to apply any changes. Depending on your Linux distribution the restarting procedure of NFS may differ. Ubuntu and Debian users:
 
@@ -118,7 +118,7 @@ If you later decide to add more NFS exports to the /etc/exports file, you will n
 
 \# exportfs -ra
 
-**5. Mount remote file system on client**
+## 5. Mount remote file system on client
 
 First we need to create a mount point:
 
@@ -158,7 +158,7 @@ touch: cannot touch `test': Read-only file system
 
 The above output proves that a remote NFS export is mounted and that we can access it by navigating to a local /home/nfs_local/ directory. Please notice that the touch command reports that the filesystem is mounted as read-only which was exactly our intention.
 
-**6. Configure automount**
+## 6. Configure automount
 
 To make this completely transparent to end users, you can automount the NFS file system every time a user boots a Linux system, or you can also use PAM modules to mount once a user logs in with a proper username and password. In this situation just edit /etc/fstab to mount system automatically during a system boot. You can use your favorite editor and create new line like this within /etc/fstab:
 
@@ -172,27 +172,21 @@ as before you also use echo command to do that:
 
 10.1.1.50:/home/nfs /home/nfs_local/ nfs defaults 0 0
 
-**7. Conclusion**
+## 7. Conclusion
 
-The Network File System comes with tons of export options. What has been shown here, just barely scratches the surface of NFS. Please visit[Linux NFS-HOWTO][3]hosted by linux documentation project or[NFS homepage][4]for more details.
+The Network File System comes with tons of export options. What has been shown here, just barely scratches the surface of NFS. Please visit [Linux NFS-HOWTO] Linux NFS-HOWTOhosted by linux documentation project or [NFS homepage] NFS homepagefor more details.
 
-**8. Appendix A**
+## 8. Appendix A
 
 Following section of this NFS tutorial is going to be devoted to RedHat and Fedora Linux systems which by default block all incoming traffic to a NFS server by engaging firewall using iptables rules. For this reason when the firewall is running on your NFS server, you might get this error when mounting NFS filesytem:
 
-**mount.nfs: mount to NFS server '10.1.1.13' failed: System Error: No route to host.**
+## mount.nfs: mount to NFS server '10.1.1.13' failed: System Error: No route to host.
 
 This error message has nothing to do with your NFS  configuration, all what needs to be done is either turn off the firewall or add iptables rules to allow traffic on portmap port 111, nfs port 2049 and random ports for other nfs services.
 
-  
-
-  
-
 There are two solutions to this problem: easy solution is to turn off the firewall completely and the right solution to add appropriate iptables rules.
 
-  
-
-**8.1. Turn off firewall on Redhat like systems:**
+## 8.1. Turn off firewall on Redhat like systems:
 
 The easiest solution is to just turn off the firewall. This will automatically grant access to the nfs daemon to anyone. I would suggest this solution only for testing purposes of your NFS configuration. Enter the following command to stop firewall and clean up all iptables rules:
 
@@ -200,17 +194,13 @@ The easiest solution is to just turn off the firewall. This will automatically g
 
 Now when your NFS settings are correct you should be able to mount nfs filesystem from you client machine.
 
-**8.2. Add iptables rules to allow NFS communication**
+## 8.2. Add iptables rules to allow NFS communication
 
 This is a more complex but right solution to the above problem. First we need to set static port for nfs services such as rquotad, mountd, statd, and lockd by editing /etc/sysconfig/nfs file. Add or uncomment following lines in your /etc/sysconfig/nfs file:
 
 LOCKD_TCPPORT=32803
 
-  
-
 LOCKD_UDPPORT=32769
-
-  
 
 MOUNTD_PORT=892
 
@@ -220,8 +210,6 @@ Restart you NFSD daemon with following commands:
 
 \# /etc/init.d/nfs restart
 
-  
-
 \# /etc/init.d/nfslock restart
 
 Use rpcinfo command to confirm a validity of your new ports settings:
@@ -230,11 +218,7 @@ Use rpcinfo command to confirm a validity of your new ports settings:
 
 The output should be similar to the one below:
 
-  
-
 program vers proto port
-
-  
 
 100000 2 tcp 111 portmapper
 
@@ -296,11 +280,7 @@ Create file called iptables-nfs-rules.txt with the following content:
 
 *filter
 
-  
-
 :INPUT ACCEPT \[0:0\]
-
-  
 
 :FORWARD ACCEPT \[0:0\]
 
@@ -371,12 +351,6 @@ Save these new rules, so you do not have to apply new rules for nfs daemon next 
 Now your server is ready to accept client nfs requests. Optionally, you may restart iptables rules / firewall with the following command:
 
 \# service iptables restart
-
-  
-
-  
-
-  
 
 [1]: https://3.bp.blogspot.com/-InZP20sz6Eg/UnyC4Le6YtI/AAAAAAAAAnQ/lHDFDlXTnxI/s1600/nfs.png
 [2]: https://en.wikipedia.org/wiki/Remote_procedure_call

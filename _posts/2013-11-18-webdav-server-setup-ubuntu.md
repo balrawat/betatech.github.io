@@ -11,13 +11,13 @@ thumbnail: >-
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-4324152554104798052'
 blogger_orig_url: 'https://www.linuxtechtips.com/2013/11/webdav-server-setup-ubuntu.html'
 ---
-[![](https://3.bp.blogspot.com/-87Bo082dbUc/Uom8XNFQRUI/AAAAAAAAAo8/s1M-XuBrPVU/s1600/webdav.png)][1]
+![](https://3.bp.blogspot.com/-87Bo082dbUc/Uom8XNFQRUI/AAAAAAAAAo8/s1M-XuBrPVU/s1600/webdav.png)
 
-**1. Introduction**
+## 1. Introduction
 
 This article will deal with installation and configuration of WebDAV server on Ubuntu Linux. WebDAV stands for Web Distributed Authoring and Versioning and allows connected users the edit and share data online via the HTTP protocol. This makes WebDAV a popular choice for developers when combined, for example, with Subversion or OpenLink Virtuoso. WebDAV is supported by number of clients ranging from davfs2, which makes it possible to mount the WebDAV's data storage to include into the local filesystem. This can be done with the mount command to various GUI applications with the native WebDAV support such as Nautilus, konqueror, etc. Futhermore, in this guide we will combine WebDAV with the Apache2 server.
 
-**2. Scenario**
+## 2. Scenario
 
 In this section I would like to describe a scenario used in this tutorial. WebDAV can be very flexible service, which allows for number of configuration settings and scenarios. In this WebDAV tutorial we will start with the simplest basic startup WedDAV configuration and from there we will build it up to fit more complex environment. You can think of WebDAV as a HTTP extension for your existing website configuration. Normally, you may already have your apache website up and running. Thus, in that case, all you need to do to in order to include the WevbDAV service is to:
 
@@ -39,7 +39,7 @@ In this guide we will configure:
 
 Edit your DNS settings accordingly or alter your client's /etc/hosts file to include the above host webdav.local resolution.
 
-**3. Apache and WebDAV installation**
+## 3. Apache and WebDAV installation
 
 In this section we will simply install apache2 and enable WebDAV module. WebDAV module comes with apache2 installation, however, it is not enabled by default. All of this can be done with two simple commands:
 
@@ -49,11 +49,9 @@ By now your should be able to access your default website located at https://web
 
 $ sudo a2dissite default
 
-  
-
 $ sudo service apache2 reload
 
-**4. Configure virtual host**
+## 4. Configure virtual host
 
 At this point we need to configure the virtual host with ServerName: webdav.local and the attached directory /var/www/webdav. To do so navigate to /etc/apache2/sites-available/:
 
@@ -65,13 +63,7 @@ and create a new site configuration file called webdav.local with the following 
 
         ServerAdmin webmaster@localhost
 
-  
-
         Servername webdav.local
-
-  
-
-  
 
         DocumentRoot /var/www/webdav
 
@@ -119,17 +111,13 @@ $ sudo service apache2 reload
 
 Now you should be able to navigate your browser to https://webdav.local and see the message: Welcome from WebDAV.local on your screen. This concludes the installation of the apache2 webserver with virtual host webdav.local
 
-**5. WebDAV setup**
+## 5. WebDAV setup
 
 It is time to enable WebDAV's module with:
 
 $ sudo a2enmod dav_fs
 
-  
-
 Considering dependency dav for dav_fs:
-
-  
 
 Enabling module dav.
 
@@ -141,7 +129,7 @@ $ sudo service apache2 restart
 
 Now that everything is ready we can setup a basic WebDAV server. This can be easily done by creating an additional directory to hold WebDAV data:
 
-**5.1. Basic Configuration**
+## 5.1. Basic Configuration
 
 $ sudo mkdir /var/www/webdav/svn
 
@@ -153,11 +141,7 @@ and enabling WebDAV for our new virtual host webdav.local. This can be done by a
 
 Alias /svn /var/www/webdav/svn
 
-  
-
 <Location /svn>
-
-  
 
     DAV On
 
@@ -169,13 +153,7 @@ What the above meas is that WebDAV enabled directory /var/www/webdav/svn which w
 
         ServerAdmin webmaster@localhost
 
-  
-
         Servername webdav.local
-
-  
-
-  
 
         DocumentRoot /var/www/webdav
 
@@ -199,8 +177,6 @@ What the above meas is that WebDAV enabled directory /var/www/webdav/svn which w
 
         </Directory>
 
-  
-
 Alias /svn /var/www/webdav/svn
 
 <Location /svn>
@@ -208,8 +184,6 @@ Alias /svn /var/www/webdav/svn
     DAV On
 
 </Location>
-
-  
 
 </VirtualHost>
 
@@ -219,33 +193,29 @@ $ sudo apt-get install cadaver
 
 Create same data file with dd to be uploaded to your WebDAV directory and upload it:
 
-$** dd if=/dev/zero of=mydata.dat bs=1M count=10**
-
-  
+$##  dd if=/dev/zero of=mydata.dat bs=1M count=10
 
 10+0 records in
-
-  
 
 10+0 records out
 
 10485760 bytes (10 MB) copied, 0.075726 s, 138 MB/s
 
-$** cadaver https://webdav.local/svn**
+$##  cadaver https://webdav.local/svn
 
-dav:/svn/>** put mydata.dat**
+dav:/svn/>##  put mydata.dat
 
 Uploading mydata.dat to `/svn/mydata.dat':
 
 Progress: \[=============================>\] 100.0% of 10485760 bytes succeeded.
 
-dav:/svn/> **quit**
+dav:/svn/> ## quit
 
 Connection to `webdav.local' closed.
 
 Now you should have the basic WebDAV server configured and ready to use. In the next section we will add some basic user authentication.
 
-**5.2. WebDAV with user authentication**
+## 5.2. WebDAV with user authentication
 
 If you intend to deploy your WebDAV server on a remote host it is more than advisable to implement at least some basic authentication. Fortunately, this can be easily done using the **htpasswd** command and reconfiguring our existing /etc/apache2/sites-available/webdav.local config file.
 
@@ -259,23 +229,13 @@ $ sudo htpasswd -c /usr/local/apache2/webdav.passwords lubos
 
 If you need to add more users use the above syntax but omit -c option as it will overwrite your existing file.
 
-  
-
 Now that the authentication file is ready, we need to add authentication to our current /etc/apache2/sites-available/webdav.local config file. New changes are highlighted with the bold font:
-
-  
 
 <VirtualHost *:80>
 
         ServerAdmin webmaster@localhost
 
-  
-
         Servername webdav.local
-
-  
-
-  
 
         DocumentRoot /var/www/webdav
 
@@ -299,51 +259,42 @@ Now that the authentication file is ready, we need to add authentication to our 
 
         </Directory>
 
-  
-
 Alias /svn /var/www/webdav/svn
 
 <Location /svn>
 
     DAV On
 
-** AuthType Basic**
+##  AuthType Basic
 
 **
 
-**        AuthName "webdav"**
+##         AuthName "webdav"
 
 ****
 
-**        AuthUserFile /usr/local/apache2/webdav.passwords**
+##         AuthUserFile /usr/local/apache2/webdav.passwords
 
-****
+**## 
 
-**        Require valid-user**
+##         Require valid-user
 
-**
 
 </Location>
-
-  
 
 </VirtualHost>
 
 From now on if you try to access your WebDAV server your will need to authenticate yourself first. Here is a WebDAV authentication example:
 
-$ **cadaver https://webdav.local/svn**
-
-  
+$ ## cadaver https://webdav.local/svn
 
 Authentication required for webdav on server `webdav.local':
-
-  
 
 Username: lubos
 
 Password: 
 
-dav:/svn/> **ls**
+dav:/svn/> ## ls
 
 Listing collection `/svn/': succeeded.
 
@@ -351,17 +302,13 @@ Listing collection `/svn/': succeeded.
 
 dav:/svn/>
 
-**5.3. Limiting WebDAV access**
+## 5.3. Limiting WebDAV access
 
 Furthermore, it is advisable to limit WebDAV access to a limited number of users. For example, if we want to let only sinlge user "Lubos" access our WebDAV repository we can do so by adding  a <Limit> clause inside the <Location> directive such as:
 
     <Limit PUT POST DELETE PROPFIND PROPPATCH MKCOL COPY MOVE LOCK UNLOCK>
 
-  
-
         AuthType Basic
-
-  
 
         AuthName "webdav"
 
@@ -377,7 +324,7 @@ AllowOverride None
 
 inside the <Location> directive.
 
-**6. Mounting WebDAV enabled directory**
+## 6. Mounting WebDAV enabled directory
 
 As it was already mentioned before WebDAV is supported by large number of clients. It is also possible to mount the WebDAV directory into a local system to act as a part of the filesystem. To do so we first need to install davfs2 as a root user:
 
@@ -389,19 +336,13 @@ then create a mount point:
 
 and finally mount it with a mount command:
 
-  
-
-  
-
-# **mount.davfs https://webdav.local/svn /mnt/webdav/**
-
-  
+# ## mount.davfs https://webdav.local/svn /mnt/webdav/
 
 Please enter the username to authenticate with server
 
 https://webdav.local/svn or hit enter for none.
 
-  Username: **lubos**
+  Username: ## lubos
 
 Please enter the password to authenticate user lubos with server
 
@@ -409,25 +350,19 @@ https://webdav.local/svn or hit enter for none.
 
   Password:  
 
-# **cd /mnt/webdav/**
+# ## cd /mnt/webdav/
 
-# **ls**
+# ## ls
 
 lost+found  mydata.dat
 
-# **touch linuxtechtips.com.txt**
+# ## touch linuxtechtips.com.txt
 
-# **sync**
+# ## sync
 
-**7. Conclusion**
+## 7. Conclusion
 
-This article described a basic configuration of WebDAV service using Apache2 webserver to get you started. There are few security issues to be considered so you need to do your homework and consult[Apache Module mod_dav][2]for more configuration settings and security enhancements to improve you configuration.
-
-  
-
-  
-
-  
+This article described a basic configuration of WebDAV service using Apache2 webserver to get you started. There are few security issues to be considered so you need to do your homework and consult [Apache Module mod_dav] Apache Module mod_davfor more configuration settings and security enhancements to improve you configuration.
 
 [1]: https://3.bp.blogspot.com/-87Bo082dbUc/Uom8XNFQRUI/AAAAAAAAAo8/s1M-XuBrPVU/s1600/webdav.png
 [2]: http://httpd.apache.org/docs/2.2/mod/mod_dav.html "apache module mod_dav"

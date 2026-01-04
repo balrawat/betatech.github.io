@@ -17,27 +17,21 @@ blogger_orig_url: 'https://www.linuxtechtips.com/2013/01/tomcat-cluster-configur
 ---
 ![](https://4.bp.blogspot.com/-NChdPh4didE/Uo9VGNcsdZI/AAAAAAAAArI/rfF-JyOxg14/s1600/tomcat-load-balancing.png)
 
-  
+
 Just because Tomcat is a lightweight container with a small footprint doesn't mean it isn't ready to deliver big performance under real-world loads. Tomcat's built-in support for clustering, load balancing, and session persistence means that you can add more power to your network as you need it, allowing your site to scale with your user base.
 
 In this article, we'll go over the basic concepts behind clustered architecture, such as load balancing and session persistance, look at some different ways to approach these problems, and then show you how easy it is to set up your own Apache Tomcat clusters.
-
-  
 
 How Clustering Works
 --------------------
 
 Although clustering is most frequently talked about in relation to scalability, most modern clustering solutions actually attack a number of related issues in addition to simply providing more CPUs to serve requests. A typical clustering solution aims to provide not only scalability, but also high availability and load balancing. Before we move on, let's briefly clarify each of these terms:
 
-  
-
 ### Scalability
 
 Scalability and clustering are not the same thing. Rather, clustering is a method of achieving scalability. Scalability has to do with the ability of a server to efficiently process multiple concurrent requests simultaneously, with the stated goal that the time it takes to process an ever increasing number of simultaneous requests should be as close to the time it took to process the initial request as possible.
 
 Clustering aims to provide scalability by spreading work out over a greater number of workers. Other methods of improving scalability are improving the hardware of the machines processing the requests, streamlining the data, caching frequent operations, and more.
-
-  
 
 ### Load Balancing
 
@@ -48,8 +42,6 @@ To enable scalability, a load balancing implementation attempts to route request
 Many load balancing solutions also take advantage of the fact that a server is now fronting the actual request processing software to provide an additional layer of security, ignoring and dropping malicious traffic before it can even reach the application servers.
 
 Finally, the load balancing implementation makes the whole clustering structure functional by encapsulating the cluster within a virtual container, with one point of access. This means that the client attempting to access the web application served by the cluster never needs to know whether or not a cluster is being used.
-
-  
 
 ### High Availability
 
@@ -65,8 +57,6 @@ Session-level failover, a more complicated proposition, involves replicating use
 
 One way to think about the structure of the cluster is as a sandwich - the load balancer is in front, distributing requests, the Tomcat servers are in the middle, serving requests, and the session replicator is in back, preserving the state data, in case anything goes wrong.
 
-  
-
 Setting up Clustering in Apache Tomcat
 --------------------------------------
 
@@ -74,14 +64,10 @@ Let's get an example Tomcat cluster up and running. As Tomcat supports a few dif
 
 Then, we'll put it all together, and walk you through setting up a simple Tomcat cluster with load balancing and session persistence from start to finish.
 
-  
-
 Load Balancing Options
 ----------------------
 
 You can approach the problem of load balancing in a variety of ways, and Tomcat supports most of them with a little wrangling. The two most common ways to balance load across a group of servers are to use a dedicated load balancing appliance, or a software/server solution.
-
-  
 
 Load Balancing With An Appliance
 --------------------------------
@@ -92,14 +78,10 @@ High end failover appliances can be very expensive, and can still represent a si
 
 While some users choose to utilize hardware load balancers with Tomcat clusters, other solutions are more common. For this reason, as well as the fact that each appliance vendor has slightly different set-up procedures for their devices, this article does not cover the configuration process for this approach. However, your vendor should be able to provide you with the proper documentation and support.
 
-  
-
 Load Balancing With a Server/Software Combination
 -------------------------------------------------
 
 The concept of the server/software approach to load balancing is basically the same as that of the appliance, but rather than using a dedicated device, it relies on a dedicated server or group of servers running one of a number of proxy solutions with load balancing capabilities.
-
-  
 
 Apache HTTPD and mod\_jk/mod\_proxy
 -----------------------------------
@@ -120,22 +102,18 @@ The load balancing algorithms used by mod\_jk are also more robust than mod\_pro
 
 As Apache HTTPD with mod_jk is far and away the most common clustering/load balancing solution used with Tomcat, this is the option we'll talk about later in this article.
 
-  
-
 Nginx, HAProxy, Wakamole and Spread
 -----------------------------------
 
 Although the official Apache documentation still recommends Apache HTTPD with Tomcat as the standard clustering solution, a growing number of alternative load balancing solutions have begun to gain traction.
 
-These solutions focus around the combination of extremely lightweight, high-performance proxy solutions such as [Nginx][1] or [HAProxy][2], which provide load balancing, with [Wackamole][3] and [Spread][4], two interoperating open source technologies that provide distributed failover awareness via peer-to-peer messaging and floating IP addresses. With this set-up, it is possible to add multiple load balancer nodes to a cluster, which monitor one another's health, providing an additional layer of failover (Note: Tomcat provides some of this functionality natively via the Tribes component).
+These solutions focus around the combination of extremely lightweight, high-performance proxy solutions such as [Nginx] Nginx or [HAProxy] HAProxy, which provide load balancing, with [Wackamole] Wackamole and [Spread] Spread, two interoperating open source technologies that provide distributed failover awareness via peer-to-peer messaging and floating IP addresses. With this set-up, it is possible to add multiple load balancer nodes to a cluster, which monitor one another's health, providing an additional layer of failover (Note: Tomcat provides some of this functionality natively via the Tribes component).
 
 Both Nginx and HAProxy are fairly new technologies, with rapidly changing feature sets, so if you're thinking about integrating them into your clusters, it will be a good idea to run some benchmarks and compare their features during your discovery process.
 
-Currently, HAProxy tends to be viewed as the more mature and stable project, but some people use a combination of HAProxy load balancing and Nginx reverse-proxying in an attempt to get the best of both worlds. Using Wakamole and Spread also requires some reading, as the peer to peer and floating IP techniques they employ can cause havoc on a shared network if not properly configured. However, according to those companies that have successfully integrated these solutions into their architectures ([Wordpress][5], for one), the work is worth it. You can find more information about setting up this kind of a system [here][6].
+Currently, HAProxy tends to be viewed as the more mature and stable project, but some people use a combination of HAProxy load balancing and Nginx reverse-proxying in an attempt to get the best of both worlds. Using Wakamole and Spread also requires some reading, as the peer to peer and floating IP techniques they employ can cause havoc on a shared network if not properly configured. However, according to those companies that have successfully integrated these solutions into their architectures ([Wordpress] Wordpress, for one), the work is worth it. You can find more information about setting up this kind of a system [here] here.
 
-Other popular software-based load balancing solutions include [Zeus][7], [Pound][8], and [LVS][9].
-
-  
+Other popular software-based load balancing solutions include [Zeus] Zeus, [Pound] Pound, and [LVS] LVS.
 
 Session Persistance
 -------------------
@@ -154,16 +132,14 @@ Ideally, the client should perceive the service as uninterrupted. However, this 
 
 Load balancer bottleneck can be eliminated by using a multi-cast replication model, where each node of the cluster replicates its session data to every other node. For large environments, this can mean that the overall cluster is split into several smaller clusters using the DeltaManager component. However, small cluster set-ups without significant load should not experience these problems.
 
-Other methods of achieving session persistence are to store the session information in a shared file system or JDBC-compliant database, or to use a cloud-based object cache system such as [Terracotta][10]. All of these methods carry an additional performance cost, as they require the additional step of writing and retrieving information to and from a database. However, as the overall goal of clustering is to improve availability, performance, and failover protection, this performance hit must be balanced against the other factors.
-
-  
+Other methods of achieving session persistence are to store the session information in a shared file system or JDBC-compliant database, or to use a cloud-based object cache system such as [Terracotta] Terracotta. All of these methods carry an additional performance cost, as they require the additional step of writing and retrieving information to and from a database. However, as the overall goal of clustering is to improve availability, performance, and failover protection, this performance hit must be balanced against the other factors.
 
 An Example Clustered Tomcat Configuration
 -----------------------------------------
 
 Tomcat provides fairly sophisticated clustering support, including several kinds of session replication, multicast or unicast heartbeat, cluster division, and more. Much of this configuration can be done right within the same XML configuration files as other Tomcat options, but there are some additional steps and options that can cause trouble.
 
-To help you get started, we've created a step by step guide to [Tomcat Clustering][11], in which we walk you through everything you need to do to get a simple Tomcat cluster with session replication running behind Apache HTTPD. Check it out!
+To help you get started, we've created a step by step guide to [Tomcat Clustering] Tomcat Clustering, in which we walk you through everything you need to do to get a simple Tomcat cluster with session replication running behind Apache HTTPD. Check it out!
 
 [1]: https://nginx.org/
 [2]: https://haproxy.1wt.eu/

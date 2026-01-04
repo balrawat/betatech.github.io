@@ -10,10 +10,10 @@ blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-1960359858529303
 blogger_orig_url: >-
   https://www.linuxtechtips.com/2013/06/shell-script-find-number-of-arguments.html
 ---
-  
-Many times , when we create shell scripts we try to do repetitive tasks through functions. Some functions take arguments & we have to check the no. of arguments that are passed to it.  
-  
-Each bash shell function has the following set of shell variables:  
+
+Many times , when we create shell scripts we try to do repetitive tasks through functions. Some functions take arguments & we have to check the no. of arguments that are passed to it.
+
+Each bash shell function has the following set of shell variables:
 
 \[a\] All function parameters or arguments can be accessed via **$1, $2, $3,..., $N**.
 
@@ -48,8 +48,6 @@ test(){
 
 }
 
-  
-
 \## Call or invoke the function ##
 
 \## Pass the parameters or arguments  ##
@@ -60,9 +58,7 @@ test 1 2 3 4 5
 
 test "this" "is" "a" "test"
 
-  
-
-**Run it as follows:**
+## Run it as follows:
 
 $ chmod +x script.name.here
 

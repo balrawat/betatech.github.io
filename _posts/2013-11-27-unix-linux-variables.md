@@ -13,7 +13,7 @@ thumbnail: >-
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-5438868227482647661'
 blogger_orig_url: 'https://www.linuxtechtips.com/2013/11/unix-linux-variables.html'
 ---
-[![](https://4.bp.blogspot.com/-DB91mZOANsk/UpXoG3sh4yI/AAAAAAAAAsw/Crr6RDYQTS0/s400/variables.png)][1]
+![](https://4.bp.blogspot.com/-DB91mZOANsk/UpXoG3sh4yI/AAAAAAAAAsw/Crr6RDYQTS0/s400/variables.png)
 
 ** UNIX Variables**
 -------------------
@@ -27,7 +27,7 @@ Standard UNIX variables are split into two categories, environment variables and
 
 An example of an environment variable is the OSTYPE variable. The value of this is the current operating system you are using. Type
 
-**% echo $OSTYPE**
+## % echo $OSTYPE
 
 More examples of environment variables are
 
@@ -45,14 +45,14 @@ ENVIRONMENT variables are set using the**setenv**command, displayed using the**p
 
 To show all values of these variables, type
 
-**% printenv | less**
+## % printenv | less
 
 ** Shell Variables**
 --------------------
 
 An example of a shell variable is the history variable. The value of this is how many shell commands to save, allow the user to scroll back through all the commands they have previously entered. Type
 
-**% echo $history**
+## % echo $history
 
 More examples of shell variables are
 
@@ -67,7 +67,7 @@ SHELL variables are both set and displayed using the**set**command. They can be 
 
 To show all values of these variables, type
 
-**% set | less**
+## % set | less
 
 ### So what is the difference between PATH and path ?
 
@@ -82,7 +82,7 @@ PATH and path specify directories to search for commands and programs. Both vari
 
 Each time you login to a UNIX host, the system looks in your home directory for initialisation files. Information in these files is used to set up your working environment. The C and TC shells uses two files called .login and .cshrc (note that both file names begin with a dot).
 
-At login the C shell first reads**.cshrc**followed by**.login**
+At login the C shell first reads**.cshrc**followed by## .login
 
 **.login**is to set conditions which will apply to the whole session and to perform actions that are relevant only at login.
 
@@ -97,17 +97,17 @@ The guidelines are to set ENVIRONMENT variables in the**.login**file and SHELL v
 
 For example, to change the number of shell commands saved in the history list, you need to set the shell variable history. It is set to 100 by default, but you can increase this if you wish.
 
-**% set history = 200**
+## % set history = 200
 
 Check this has worked by typing
 
-**% echo $history**
+## % echo $history
 
 However, this has only set the variable for the lifetime of the current shell. If you open a new xterm window, it will only have the default history value set. To PERMANENTLY set the value of history, you will need to add the set command to the .cshrc file.
 
 First open the**.cshrc**file in a text editor. An easy, user-friendly editor to use is nedit.
 
-**% nedit ~/.cshrc**
+## % nedit ~/.cshrc
 
 Add the following line AFTER the list of other commands.
 
@@ -115,11 +115,11 @@ set history = 200
 
 Save the file and force the shell to reread its .cshrc file buy using the shell source command.
 
-**% source .cshrc**
+## % source .cshrc
 
 Check this has worked by typing
 
-**% echo $history**
+## % echo $history
 
 ** Setting the path**
 ---------------------
@@ -130,23 +130,20 @@ For example, to run units, you either need to directly specify the units path (*
 
 You can add it to the end of your existing path (the**$path**represents this) by issuing the command:
 
-**% set path = ($path ~/units174/bin)**
+## % set path = ($path ~/units174/bin)
 
 Test that this worked by trying to run units in any directory other that where units is actually located.
 
-**% cd**
+## % cd
 
-**
+## 
 
-**% units**
+## % units
 
-**  
 
 To add this path PERMANENTLY, add the following line to your .cshrc AFTER the list of other commands.
 
-  
-
-**set path = ($path ~/units174/bin)**
+## set path = ($path ~/units174/bin)
 
 [1]: https://4.bp.blogspot.com/-DB91mZOANsk/UpXoG3sh4yI/AAAAAAAAAsw/Crr6RDYQTS0/s1600/variables.png
 
