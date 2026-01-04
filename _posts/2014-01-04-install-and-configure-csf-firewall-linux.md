@@ -9,7 +9,7 @@ tags:
 imagefeature: install-csf.png
 modified_time: '2014-01-04T15:27:25.691+05:30'
 thumbnail: >-
-  http://3.bp.blogspot.com/-T8XgsbBagfQ/Usfac0nvdQI/AAAAAAAAAys/sqZHhsgKGZA/s72-c/install-csf.png
+  https://3.bp.blogspot.com/-T8XgsbBagfQ/Usfac0nvdQI/AAAAAAAAAys/sqZHhsgKGZA/s72-c/install-csf.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-8282490906839104175'
 blogger_orig_url: >-
   https://www.linuxtechtips.com/2014/01/install-and-configure-csf-firewall-linux.html
@@ -94,7 +94,7 @@ This feature allows CSF to download lists of blocked IP addresses automatically 
 Config Server Firewall is not currently available in Debian or Ubuntu repositories, and has to be downloaded from the ConfigServer's website.
 
 ```bash
-wget http://www.configserver.com/free/csf.tgz
+wget https://www.configserver.com/free/csf.tgz
 ```
 
 This will download CSF to your current working directory.

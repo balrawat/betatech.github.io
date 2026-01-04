@@ -76,8 +76,8 @@ Four of Culp's laws apply directly to the material covered in this tutorial:
 
 [Part 2 >>][4]
 
-[1]: http://www.linuxtechtips.com/2012/12/hardening-linux-server-part-2.html
-[2]: http://www.ubuntu.com/getubuntu/download
-[3]: http://www.virtualbox.org/
-[4]: http://www.linuxtechtips.com/2012/12/hardening-linux-server-part-2.html
+[1]: https://www.linuxtechtips.com/2012/12/hardening-linux-server-part-2.html
+[2]: https://www.ubuntu.com/getubuntu/download
+[3]: https://www.virtualbox.org/
+[4]: https://www.linuxtechtips.com/2012/12/hardening-linux-server-part-2.html
 

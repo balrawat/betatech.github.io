@@ -9,11 +9,11 @@ tags:
   - kickstart
 modified_time: '2013-10-29T10:34:14.917+05:30'
 thumbnail: >-
-  http://1.bp.blogspot.com/-0RoFVlT_u_w/Um9BwZQbVOI/AAAAAAAAAmM/nechlJDH3J0/s72-c/netboot.png
+  https://1.bp.blogspot.com/-0RoFVlT_u_w/Um9BwZQbVOI/AAAAAAAAAmM/nechlJDH3J0/s72-c/netboot.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-8508964222255614522'
 blogger_orig_url: 'https://www.linuxtechtips.com/2013/10/setup-kickstart-server-in-linux.html'
 ---
-[![](http://1.bp.blogspot.com/-0RoFVlT_u_w/Um9BwZQbVOI/AAAAAAAAAmM/nechlJDH3J0/s320/netboot.png)][1]
+[![](https://1.bp.blogspot.com/-0RoFVlT_u_w/Um9BwZQbVOI/AAAAAAAAAmM/nechlJDH3J0/s320/netboot.png)][1]
 
 **What is Kickstart?**
 
@@ -211,5 +211,5 @@ yum install system-config-kickstart
 
   
 
-[1]: http://1.bp.blogspot.com/-0RoFVlT_u_w/Um9BwZQbVOI/AAAAAAAAAmM/nechlJDH3J0/s1600/netboot.png
+[1]: https://1.bp.blogspot.com/-0RoFVlT_u_w/Um9BwZQbVOI/AAAAAAAAAmM/nechlJDH3J0/s1600/netboot.png
 

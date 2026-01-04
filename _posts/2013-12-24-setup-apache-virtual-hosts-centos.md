@@ -10,11 +10,11 @@ tags:
 imagefeature: apachevirtualhosts.png
 modified_time: '2013-12-24T17:47:05.573+05:30'
 thumbnail: >-
-  http://1.bp.blogspot.com/-b4rAq0N4xzw/Url7KWx_7VI/AAAAAAAAAyQ/MpFcyAwQ52s/s72-c/apachevirtualhosts.png
+  https://1.bp.blogspot.com/-b4rAq0N4xzw/Url7KWx_7VI/AAAAAAAAAyQ/MpFcyAwQ52s/s72-c/apachevirtualhosts.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-4211693850535922778'
 blogger_orig_url: 'https://www.linuxtechtips.com/2013/12/setup-apache-virtual-hosts-centos.html'
 ---
-[![](http://1.bp.blogspot.com/-b4rAq0N4xzw/Url7KWx_7VI/AAAAAAAAAyQ/MpFcyAwQ52s/s1600/apachevirtualhosts.png)][1]
+[![](https://1.bp.blogspot.com/-b4rAq0N4xzw/Url7KWx_7VI/AAAAAAAAAyQ/MpFcyAwQ52s/s1600/apachevirtualhosts.png)][1]
 
 **About Virtual Hosts**
 
@@ -368,7 +368,7 @@ However, it may be a good idea to delete these made up addresses out of the loca
 
 * * *
 
-Once you have finished setting up your virtual host, you can see how it looks online. Type your ip address into the browser (ie. http://12.34.56.789)
+Once you have finished setting up your virtual host, you can see how it looks online. Type your ip address into the browser (ie. https://12.34.56.789)
 
   
 
@@ -428,8 +428,8 @@ Once you have set up your virtual hosts, you can proceed to[Create a SSL Certifi
 
   
 
-[1]: http://1.bp.blogspot.com/-b4rAq0N4xzw/Url7KWx_7VI/AAAAAAAAAyQ/MpFcyAwQ52s/s1600/apachevirtualhosts.png
-[2]: http://www.linuxtechtips.com/2013/12/steps-to-follow-after-linux-server-installation.html
+[1]: https://1.bp.blogspot.com/-b4rAq0N4xzw/Url7KWx_7VI/AAAAAAAAAyQ/MpFcyAwQ52s/s1600/apachevirtualhosts.png
+[2]: https://www.linuxtechtips.com/2013/12/steps-to-follow-after-linux-server-installation.html
 [3]: http://support.microsoft.com/kb/923947
-[4]: http://www.linuxtechtips.com/2013/12/create-ssl-certificate-for-apache-on-centos.html
+[4]: https://www.linuxtechtips.com/2013/12/create-ssl-certificate-for-apache-on-centos.html
 

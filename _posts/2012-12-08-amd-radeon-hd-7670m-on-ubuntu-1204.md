@@ -100,5 +100,5 @@ Hope it helps :)
 
   
 
-[1]: http://cinnamon.linuxmint.com/
+[1]: https://cinnamon.linuxmint.com/
 

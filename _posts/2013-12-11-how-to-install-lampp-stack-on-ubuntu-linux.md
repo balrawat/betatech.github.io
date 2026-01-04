@@ -10,12 +10,12 @@ tags:
   - php
 modified_time: '2013-12-11T18:40:33.457+05:30'
 thumbnail: >-
-  http://2.bp.blogspot.com/-8x6dugKaabk/UqhhKG12FII/AAAAAAAAAw0/HIjRekjE8II/s72-c/lampp.png
+  https://2.bp.blogspot.com/-8x6dugKaabk/UqhhKG12FII/AAAAAAAAAw0/HIjRekjE8II/s72-c/lampp.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-531155729873373933'
 blogger_orig_url: >-
   https://www.linuxtechtips.com/2013/12/how-to-install-lampp-stack-on-ubuntu-linux.html
 ---
-[![](http://2.bp.blogspot.com/-8x6dugKaabk/UqhhKG12FII/AAAAAAAAAw0/HIjRekjE8II/s640/lampp.png)][1]
+[![](https://2.bp.blogspot.com/-8x6dugKaabk/UqhhKG12FII/AAAAAAAAAw0/HIjRekjE8II/s640/lampp.png)][1]
 
 ###   
 
@@ -44,7 +44,7 @@ _\# sudo apt-get update_
 _\# sudo apt-get install apache2_
 
   
-That’s it. To check if Apache is installed, direct your browser to your server’s IP address (eg. http://12.34.56.789). The page should display the words “It works!"  
+That’s it. To check if Apache is installed, direct your browser to your server’s IP address (eg. https://12.34.56.789). The page should display the words “It works!"  
 
 **How to Find your Server’s IP address**
 
@@ -261,7 +261,7 @@ _\# sudo service apache2 restart_
   
 
   
-Finish up by visiting your php info page (make sure you replace the example ip address with your correct one): http://12.34.56.789/info.php
+Finish up by visiting your php info page (make sure you replace the example ip address with your correct one): https://12.34.56.789/info.php
 
   
 
@@ -269,6 +269,6 @@ Finish up by visiting your php info page (make sure you replace the example ip a
 
   
 
-[1]: http://2.bp.blogspot.com/-8x6dugKaabk/UqhhKG12FII/AAAAAAAAAw0/HIjRekjE8II/s1600/lampp.png
-[2]: http://www.linuxtechtips.com/2013/12/steps-to-follow-after-linux-server-installation.html
+[1]: https://2.bp.blogspot.com/-8x6dugKaabk/UqhhKG12FII/AAAAAAAAAw0/HIjRekjE8II/s1600/lampp.png
+[2]: https://www.linuxtechtips.com/2013/12/steps-to-follow-after-linux-server-installation.html
 

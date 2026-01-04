@@ -135,6 +135,6 @@ One way to teach users to use strong passwords but keep them from writing down c
 
   
 
-[1]: http://www.linuxtechtips.com/2012/12/hardening-linux-server-part-4.html
-[2]: http://www.linuxtechtips.com/2012/12/hardening-linux-server-part-4.html
+[1]: https://www.linuxtechtips.com/2012/12/hardening-linux-server-part-4.html
+[2]: https://www.linuxtechtips.com/2012/12/hardening-linux-server-part-4.html
 

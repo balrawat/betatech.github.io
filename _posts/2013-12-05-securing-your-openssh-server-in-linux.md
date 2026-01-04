@@ -8,12 +8,12 @@ tags:
   - SSH
 modified_time: '2013-12-05T10:33:45.217+05:30'
 thumbnail: >-
-  http://1.bp.blogspot.com/-GD8eXr1qbkM/UqAI4RFbJSI/AAAAAAAAAus/IguRSPH1dsQ/s72-c/ssh.png
+  https://1.bp.blogspot.com/-GD8eXr1qbkM/UqAI4RFbJSI/AAAAAAAAAus/IguRSPH1dsQ/s72-c/ssh.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-6483259583342610426'
 blogger_orig_url: >-
   https://www.linuxtechtips.com/2013/12/securing-your-openssh-server-in-linux.html
 ---
-[![](http://1.bp.blogspot.com/-GD8eXr1qbkM/UqAI4RFbJSI/AAAAAAAAAus/IguRSPH1dsQ/s640/ssh.png)][1]
+[![](https://1.bp.blogspot.com/-GD8eXr1qbkM/UqAI4RFbJSI/AAAAAAAAAus/IguRSPH1dsQ/s640/ssh.png)][1]
 
   
 
@@ -203,7 +203,7 @@ DenyGroups group1 group2 group3
 
 10. **Update OpenSSH & OS**
 
-Make sure your Linux system is running the latest version for OpenSSH. SSH package version depends on your Linux distribution & OS version. Your distro will use the best or stable version for any packages, so if you want to upgrade to another version, you can do this via source package installation. It can be downloaded on OpenSSH official site[http://www.openssh.com][2]. Alternatively, you can do it by installing the latest rpm package or changing your repository, then use the yum.
+Make sure your Linux system is running the latest version for OpenSSH. SSH package version depends on your Linux distribution & OS version. Your distro will use the best or stable version for any packages, so if you want to upgrade to another version, you can do this via source package installation. It can be downloaded on OpenSSH official site[https://www.openssh.com][2]. Alternatively, you can do it by installing the latest rpm package or changing your repository, then use the yum.
 
   
 
@@ -510,7 +510,7 @@ SSH banner exchange (#750725)
 
   
 
-[1]: http://1.bp.blogspot.com/-GD8eXr1qbkM/UqAI4RFbJSI/AAAAAAAAAus/IguRSPH1dsQ/s1600/ssh.png
-[2]: http://www.openssh.com/ "OpenSSH"
-[3]: http://freelinuxtutorials.com/tutorials/ssh-authentication-via-public-private-keys "SSH authentication via private public keys"
+[1]: https://1.bp.blogspot.com/-GD8eXr1qbkM/UqAI4RFbJSI/AAAAAAAAAus/IguRSPH1dsQ/s1600/ssh.png
+[2]: https://www.openssh.com/ "OpenSSH"
+[3]: https://freelinuxtutorials.com/tutorials/ssh-authentication-via-public-private-keys "SSH authentication via private public keys"
 

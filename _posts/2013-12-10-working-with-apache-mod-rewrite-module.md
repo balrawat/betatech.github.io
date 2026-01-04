@@ -9,12 +9,12 @@ tags:
   - apache
 modified_time: '2013-12-10T13:13:13.266+05:30'
 thumbnail: >-
-  http://2.bp.blogspot.com/-DASzpcLHH_U/UqbFGNwOaWI/AAAAAAAAAv4/UmIqIVEA6No/s72-c/mod_rewrite.png
+  https://2.bp.blogspot.com/-DASzpcLHH_U/UqbFGNwOaWI/AAAAAAAAAv4/UmIqIVEA6No/s72-c/mod_rewrite.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-4551079773210108364'
 blogger_orig_url: >-
   https://www.linuxtechtips.com/2013/12/working-with-apache-mod-rewrite-module.html
 ---
-[![](http://2.bp.blogspot.com/-DASzpcLHH_U/UqbFGNwOaWI/AAAAAAAAAv4/UmIqIVEA6No/s640/mod_rewrite.png)][1]
+[![](https://2.bp.blogspot.com/-DASzpcLHH_U/UqbFGNwOaWI/AAAAAAAAAv4/UmIqIVEA6No/s640/mod_rewrite.png)][1]
 
 **Introduction**
 
@@ -114,7 +114,7 @@ RewriteRule ^/index\\.html$ /index.php \[L\]
 
 ·         **\[L\]** Options that control how this works
 
-This example is used because the index.html file has now been replaced with a PHP file index.php. This is a something that I did with my website when I wanted to add some dynamic updates to the index page. So anyone that tried to access http://www.linuxtechtips.com/index.html , will get the resulting page [http://www.linuxtechtips.com/index.php][4]
+This example is used because the index.html file has now been replaced with a PHP file index.php. This is a something that I did with my website when I wanted to add some dynamic updates to the index page. So anyone that tried to access https://www.linuxtechtips.com/index.html , will get the resulting page [https://www.linuxtechtips.com/index.php][4]
 
 The pattern matched is the string ^/index\\.html$, which works as follows:
 
@@ -268,8 +268,8 @@ The combination of RewriteCond and RewriteRule can be used to do lots more, but 
 
   
 
-[1]: http://2.bp.blogspot.com/-DASzpcLHH_U/UqbFGNwOaWI/AAAAAAAAAv4/UmIqIVEA6No/s1600/mod_rewrite.png
+[1]: https://2.bp.blogspot.com/-DASzpcLHH_U/UqbFGNwOaWI/AAAAAAAAAv4/UmIqIVEA6No/s1600/mod_rewrite.png
 [2]: http://httpd.apache.org/docs-2.0/mod/mod_rewrite.html
-[3]: http://www.linuxtechtips.com/2013/12/working-with-regular-expressions.html
-[4]: http://www.linuxtechtips.com/index.php
+[3]: https://www.linuxtechtips.com/2013/12/working-with-regular-expressions.html
+[4]: https://www.linuxtechtips.com/index.php
 

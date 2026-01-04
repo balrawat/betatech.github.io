@@ -9,11 +9,11 @@ tags:
   - SSH
 modified_time: '2013-12-11T16:41:47.918+05:30'
 thumbnail: >-
-  http://4.bp.blogspot.com/-lqyHtF9bBvM/UqhIVsscNSI/AAAAAAAAAwY/8zi9JsnGu1M/s72-c/DenyHosts.png
+  https://4.bp.blogspot.com/-lqyHtF9bBvM/UqhIVsscNSI/AAAAAAAAAwY/8zi9JsnGu1M/s72-c/DenyHosts.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-4413577211053553078'
 blogger_orig_url: 'https://www.linuxtechtips.com/2013/12/how-to-install-denyhosts-on-linux.html'
 ---
-[![](http://4.bp.blogspot.com/-lqyHtF9bBvM/UqhIVsscNSI/AAAAAAAAAwY/8zi9JsnGu1M/s400/DenyHosts.png)][1]
+[![](https://4.bp.blogspot.com/-lqyHtF9bBvM/UqhIVsscNSI/AAAAAAAAAwY/8zi9JsnGu1M/s400/DenyHosts.png)][1]
 
 ### About DenyHosts
 
@@ -37,7 +37,7 @@ We need[epel repo][2]to install fail2ban on RHEL/Centos based machines.
 
 So, download the rpm:-
 
-_\# wget[http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm][3]_
+_\# wget[https://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm][3]_
 
 and, then install
 
@@ -82,7 +82,7 @@ _\# vim /etc/denyhosts.conf_
 
   
 
-[1]: http://4.bp.blogspot.com/-lqyHtF9bBvM/UqhIVsscNSI/AAAAAAAAAwY/8zi9JsnGu1M/s1600/DenyHosts.png
-[2]: http://www.linuxtechtips.com/2012/11/installing-rhel-epel-repo-on-centos-5x.html
-[3]: http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+[1]: https://4.bp.blogspot.com/-lqyHtF9bBvM/UqhIVsscNSI/AAAAAAAAAwY/8zi9JsnGu1M/s1600/DenyHosts.png
+[2]: https://www.linuxtechtips.com/2012/11/installing-rhel-epel-repo-on-centos-5x.html
+[3]: https://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 

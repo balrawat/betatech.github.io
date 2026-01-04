@@ -9,12 +9,12 @@ tags:
   - os
 modified_time: '2013-12-12T11:42:15.179+05:30'
 thumbnail: >-
-  http://3.bp.blogspot.com/-3DZTkaGwZ6s/UqlTtDsPiiI/AAAAAAAAAxc/15fI98il3oE/s72-c/rhel7beta.png
+  https://3.bp.blogspot.com/-3DZTkaGwZ6s/UqlTtDsPiiI/AAAAAAAAAxc/15fI98il3oE/s72-c/rhel7beta.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-8942557668239945729'
 blogger_orig_url: >-
   https://www.linuxtechtips.com/2013/12/red-hat-enterprise-linux-7-beta-arrives.html
 ---
-[![](http://3.bp.blogspot.com/-3DZTkaGwZ6s/UqlTtDsPiiI/AAAAAAAAAxc/15fI98il3oE/s1600/rhel7beta.png)][1]
+[![](https://3.bp.blogspot.com/-3DZTkaGwZ6s/UqlTtDsPiiI/AAAAAAAAAxc/15fI98il3oE/s1600/rhel7beta.png)][1]
 
   
 
@@ -40,7 +40,7 @@ Please click[here][2]to learn more about what is new in version 7. If you are in
 
   
 
-[1]: http://3.bp.blogspot.com/-3DZTkaGwZ6s/UqlTtDsPiiI/AAAAAAAAAxc/15fI98il3oE/s1600/rhel7beta.png
+[1]: https://3.bp.blogspot.com/-3DZTkaGwZ6s/UqlTtDsPiiI/AAAAAAAAAxc/15fI98il3oE/s1600/rhel7beta.png
 [2]: https://access.redhat.com/site/documentation/en-US/Red_Hat_Enterprise_Linux/7-Beta/html-single/7.0_Release_Notes/index.html "Release Notes"
 [3]: https://access.redhat.com/site/products/Red_Hat_Enterprise_Linux/Get-Beta "Beta"
 

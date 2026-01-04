@@ -8,14 +8,14 @@ tags:
   - postfix
 modified_time: '2013-12-05T17:14:56.840+05:30'
 thumbnail: >-
-  http://1.bp.blogspot.com/-nat9AcEDuFA/UqAPDw5sdlI/AAAAAAAAAvE/zrfTca78BSU/s72-c/postfix-gmail.png
+  https://1.bp.blogspot.com/-nat9AcEDuFA/UqAPDw5sdlI/AAAAAAAAAvE/zrfTca78BSU/s72-c/postfix-gmail.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-6207264198744482713'
 blogger_orig_url: >-
   https://www.linuxtechtips.com/2013/12/configure-postfix-to-use-gmail-in-linux.html
 ---
   
 
-[![](http://1.bp.blogspot.com/-nat9AcEDuFA/UqAPDw5sdlI/AAAAAAAAAvE/zrfTca78BSU/s640/postfix-gmail.png)][1]
+[![](https://1.bp.blogspot.com/-nat9AcEDuFA/UqAPDw5sdlI/AAAAAAAAAvE/zrfTca78BSU/s640/postfix-gmail.png)][1]
 
   
 
@@ -31,7 +31,7 @@ The common errors you will encounter if sending from your postfix mail server fa
 
 -certificate verification failed for gmail.com:unable to get local issuer certificate
 
--Authentication Required. Learn more at 530 5.5.1 http://mail.google.com/support/bin/answer.py?
+-Authentication Required. Learn more at 530 5.5.1 https://mail.google.com/support/bin/answer.py?
 
   
 
@@ -179,5 +179,5 @@ May  3 17:35:00 FLT postfix/smtp\[28244\]: 0ABB61CE32A: to=<linuxtechtips-tutor
 
   
 
-[1]: http://1.bp.blogspot.com/-nat9AcEDuFA/UqAPDw5sdlI/AAAAAAAAAvE/zrfTca78BSU/s1600/postfix-gmail.png
+[1]: https://1.bp.blogspot.com/-nat9AcEDuFA/UqAPDw5sdlI/AAAAAAAAAvE/zrfTca78BSU/s1600/postfix-gmail.png
 

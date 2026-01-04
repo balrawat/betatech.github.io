@@ -141,8 +141,8 @@ When permissions are set to 777, everyone is given the ability to read write and
 
   
 
-[1]: http://www.linuxtechtips.com/2012/12/hardening-linux-server-part-3.html
-[2]: http://www.linuxtechtips.com/2012/12/hardening-linux-server-part-5.html
-[3]: http://www.linuxtechtips.com/2012/12/hardening-linux-server-part-3.html
-[4]: http://www.linuxtechtips.com/2012/12/hardening-linux-server-part-5.html
+[1]: https://www.linuxtechtips.com/2012/12/hardening-linux-server-part-3.html
+[2]: https://www.linuxtechtips.com/2012/12/hardening-linux-server-part-5.html
+[3]: https://www.linuxtechtips.com/2012/12/hardening-linux-server-part-3.html
+[4]: https://www.linuxtechtips.com/2012/12/hardening-linux-server-part-5.html
 

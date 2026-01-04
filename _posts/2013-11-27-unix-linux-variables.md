@@ -9,11 +9,11 @@ tags:
   - shell
 modified_time: '2013-11-28T13:48:46.897+05:30'
 thumbnail: >-
-  http://4.bp.blogspot.com/-DB91mZOANsk/UpXoG3sh4yI/AAAAAAAAAsw/Crr6RDYQTS0/s72-c/variables.png
+  https://4.bp.blogspot.com/-DB91mZOANsk/UpXoG3sh4yI/AAAAAAAAAsw/Crr6RDYQTS0/s72-c/variables.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-5438868227482647661'
 blogger_orig_url: 'https://www.linuxtechtips.com/2013/11/unix-linux-variables.html'
 ---
-[![](http://4.bp.blogspot.com/-DB91mZOANsk/UpXoG3sh4yI/AAAAAAAAAsw/Crr6RDYQTS0/s400/variables.png)][1]
+[![](https://4.bp.blogspot.com/-DB91mZOANsk/UpXoG3sh4yI/AAAAAAAAAsw/Crr6RDYQTS0/s400/variables.png)][1]
 
 ** UNIX Variables**
 -------------------
@@ -148,5 +148,5 @@ To add this path PERMANENTLY, add the following line to your .cshrc AFTER the li
 
 **set path = ($path ~/units174/bin)**
 
-[1]: http://4.bp.blogspot.com/-DB91mZOANsk/UpXoG3sh4yI/AAAAAAAAAsw/Crr6RDYQTS0/s1600/variables.png
+[1]: https://4.bp.blogspot.com/-DB91mZOANsk/UpXoG3sh4yI/AAAAAAAAAsw/Crr6RDYQTS0/s1600/variables.png
 

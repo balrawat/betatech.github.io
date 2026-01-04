@@ -100,7 +100,7 @@ Because I set up the VM with a synthetic network adapter, it is not detected the
 
   
 
-![Erreur : aucune carte réseau détectée](http://blogs.technet.com/blogfiles/pascals/WindowsLiveWriter/UbuntuServerdansHyperVaveclesdriversHype_E693/image_3.png "Error: no network  adapter detected")
+![Erreur : aucune carte réseau détectée](https://blogs.technet.com/blogfiles/pascals/WindowsLiveWriter/UbuntuServerdansHyperVaveclesdriversHype_E693/image_3.png "Error: no network  adapter detected")
 
   
 
@@ -110,9 +110,9 @@ Once the virtual machine installed and started, the steps outlined above are fai
 
   
 
-![initramfs](http://blogs.technet.com/blogfiles/pascals/WindowsLiveWriter/UbuntuServerdansHyperVaveclesdriversHype_E693/image_10.png "initramfs")
+![initramfs](https://blogs.technet.com/blogfiles/pascals/WindowsLiveWriter/UbuntuServerdansHyperVaveclesdriversHype_E693/image_10.png "initramfs")
 
-![interfaces](http://blogs.technet.com/blogfiles/pascals/WindowsLiveWriter/UbuntuServerdansHyperVaveclesdriversHype_E693/image_11.png "Interfaces")
+![interfaces](https://blogs.technet.com/blogfiles/pascals/WindowsLiveWriter/UbuntuServerdansHyperVaveclesdriversHype_E693/image_11.png "Interfaces")
 
   
 
@@ -120,13 +120,13 @@ After a reboot (sudo reboot), we have many assets on the network map seth0 synth
 
   
 
-![Réseau et drivers Hyper-V](http://blogs.technet.com/blogfiles/pascals/WindowsLiveWriter/UbuntuServerdansHyperVaveclesdriversHype_E693/image_14.png "Network systems and Hyper-V")
+![Réseau et drivers Hyper-V](https://blogs.technet.com/blogfiles/pascals/WindowsLiveWriter/UbuntuServerdansHyperVaveclesdriversHype_E693/image_14.png "Network systems and Hyper-V")
 
   
 
 That is what servers run Linux under Hyper-V with decent performance. Have to wait for integration into the Linux kernel the next features (multi-processors, clock synchronization and stop integrated), these features are currently available in the beta integration services 2.1, SUSE Linux Enterprise Server Red Hat Enterprise Linux.
 
-[1]: http://blogs.technet.com/b/port25/archive/2009/07/22/introduction-to-the-linux-integration-components.aspx
-[2]: http://blog.allanglesit.com/2010/05/ubuntu-and-hyper-v-the-paths-to-enlightenment/
-[3]: http://www.ubuntu.com/download/server
+[1]: https://blogs.technet.com/b/port25/archive/2009/07/22/introduction-to-the-linux-integration-components.aspx
+[2]: https://blog.allanglesit.com/2010/05/ubuntu-and-hyper-v-the-paths-to-enlightenment/
+[3]: https://www.ubuntu.com/download/server
 

@@ -71,7 +71,7 @@ Installing on Centos/RHEL 6:-
 *   Make sure your machine can connect to the internet
 *   Download and install the epel repo:-
 
-_wget http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm  
+_wget https://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm  
 rpm -ivh epel-release-6.8.noarch.rpm_
 
   
@@ -100,6 +100,6 @@ _yum install xorg-x11-fonts-Type1 xorg-x11-fonts-misc_
   
   
 
-[1]: http://freedesktop.org/
-[2]: http://www.xfce.org/projects
+[1]: https://freedesktop.org/
+[2]: https://www.xfce.org/projects
 

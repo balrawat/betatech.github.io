@@ -7,7 +7,7 @@ tags:
   - linux boot process
 modified_time: '2014-01-07T12:53:51.165+05:30'
 thumbnail: >-
-  http://1.bp.blogspot.com/-hlSAMe_XbZM/ULyiV3sA0II/AAAAAAAAAJ4/90R6LnNRGKE/s72-c/fig1.gif
+  https://1.bp.blogspot.com/-hlSAMe_XbZM/ULyiV3sA0II/AAAAAAAAAJ4/90R6LnNRGKE/s72-c/fig1.gif
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-1245106146120819572'
 blogger_orig_url: 'https://www.linuxtechtips.com/2012/11/the-linux-boot-process.html'
 ---
@@ -40,7 +40,7 @@ Figure 1 gives you the 20,000-foot view.
 
   
 
-[![](http://1.bp.blogspot.com/-hlSAMe_XbZM/ULyiV3sA0II/AAAAAAAAAJ4/90R6LnNRGKE/s1600/fig1.gif)][1]
+[![](https://1.bp.blogspot.com/-hlSAMe_XbZM/ULyiV3sA0II/AAAAAAAAAJ4/90R6LnNRGKE/s1600/fig1.gif)][1]
 
   
 
@@ -86,7 +86,7 @@ Stage 1 boot loader
 
 The primary boot loader that resides in the MBR is a 512-byte image containing both program code and a small partition table (see Figure 2). The first 446 bytes are the primary boot loader, which contains both executable code and error message text. The next sixty-four bytes are the partition table, which contains a record for each of four partitions (sixteen bytes each). The MBR ends with two bytes that are defined as the magic number (0xAA55). The magic number serves as a validation check of the MBR.
 
-[![](http://3.bp.blogspot.com/-vaqZ59Odv84/ULyiV_5hM8I/AAAAAAAAAJ8/s3Q6vor__mM/s1600/fig2.gif)][2]
+[![](https://3.bp.blogspot.com/-vaqZ59Odv84/ULyiV_5hM8I/AAAAAAAAAJ8/s3Q6vor__mM/s1600/fig2.gif)][2]
 
   
 
@@ -172,7 +172,7 @@ In the new `startup_32` function (also called the swapper or process 0), the pag
 
 **Figure 3. Major functions flow for the Linux kernel i386 boot **
 
- ![Major Functions in Linux Kernel i386 Boot Process](http://www.ibm.com/developerworks/linux/library/l-linuxboot/fig3.gif) With the call to `start_kernel`, a long list of initialization functions are called to set up interrupts, perform further memory configuration, and load the initial RAM disk. In the end, a call is made to `kernel_thread` (in `arch/i386/kernel/process.c`) to start the `init` function, which is the first user-space process. Finally, the idle task is started and the scheduler can now take control (after the call to `cpu_idle`). With interrupts enabled, the pre-emptive scheduler periodically takes control to provide multitasking.  
+ ![Major Functions in Linux Kernel i386 Boot Process](https://www.ibm.com/developerworks/linux/library/l-linuxboot/fig3.gif) With the call to `start_kernel`, a long list of initialization functions are called to set up interrupts, perform further memory configuration, and load the initial RAM disk. In the end, a call is made to `kernel_thread` (in `arch/i386/kernel/process.c`) to start the `init` function, which is the first user-space process. Finally, the idle task is started and the scheduler can now take control (after the call to `cpu_idle`). With interrupts enabled, the pre-emptive scheduler periodically takes control to provide multitasking.  
 
 During the boot of the kernel, the initial-RAM disk (`initrd`) that was loaded into memory by the stage 2 boot loader is copied into RAM and mounted. This `initrd` serves as a temporary root file system in RAM and allows the kernel to fully boot without having to mount any physical disks. Since the necessary modules needed to interface with peripherals can be part of the `initrd`, the kernel can be very small, but still support a large number of possible hardware configurations. After the kernel is booted, the root file system is pivoted (via `pivot_root`) where the `initrd` root file system is unmounted and the real root file system is mounted.
 
@@ -202,6 +202,6 @@ Summary
 
 Much like Linux itself, the Linux boot process is highly flexible, supporting a huge number of processors and hardware platforms. In the beginning, the loadlin boot loader provided a simple way to boot Linux without any frills. The LILO boot loader expanded the boot capabilities, but lacked any file system awareness. The latest generation of boot loaders, such as GRUB, permits Linux to boot from a range of file systems (from Minix to Reiser).
 
-[1]: http://1.bp.blogspot.com/-hlSAMe_XbZM/ULyiV3sA0II/AAAAAAAAAJ4/90R6LnNRGKE/s1600/fig1.gif
-[2]: http://3.bp.blogspot.com/-vaqZ59Odv84/ULyiV_5hM8I/AAAAAAAAAJ8/s3Q6vor__mM/s1600/fig2.gif
+[1]: https://1.bp.blogspot.com/-hlSAMe_XbZM/ULyiV3sA0II/AAAAAAAAAJ4/90R6LnNRGKE/s1600/fig1.gif
+[2]: https://3.bp.blogspot.com/-vaqZ59Odv84/ULyiV_5hM8I/AAAAAAAAAJ8/s3Q6vor__mM/s1600/fig2.gif
 

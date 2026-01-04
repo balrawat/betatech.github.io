@@ -8,11 +8,11 @@ tags:
   - router
 modified_time: '2014-01-07T12:45:27.731+05:30'
 thumbnail: >-
-  http://3.bp.blogspot.com/-peke76gt-wo/Uo7pDIYYeII/AAAAAAAAApo/3Teg6vx8BNU/s72-c/router.png
+  https://3.bp.blogspot.com/-peke76gt-wo/Uo7pDIYYeII/AAAAAAAAApo/3Teg6vx8BNU/s72-c/router.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-1140107872530794214'
 blogger_orig_url: 'https://www.linuxtechtips.com/2013/12/configure-centos-as-a-router.html'
 ---
-[![](http://3.bp.blogspot.com/-peke76gt-wo/Uo7pDIYYeII/AAAAAAAAApo/3Teg6vx8BNU/s1600/router.png)][1]
+[![](https://3.bp.blogspot.com/-peke76gt-wo/Uo7pDIYYeII/AAAAAAAAApo/3Teg6vx8BNU/s1600/router.png)][1]
 
   
 
@@ -106,5 +106,5 @@ or you can also put the same entry in your interface specific file at /etc/sysc
   
   
 
-[1]: http://3.bp.blogspot.com/-peke76gt-wo/Uo7pDIYYeII/AAAAAAAAApo/3Teg6vx8BNU/s1600/router.png
+[1]: https://3.bp.blogspot.com/-peke76gt-wo/Uo7pDIYYeII/AAAAAAAAApo/3Teg6vx8BNU/s1600/router.png
 

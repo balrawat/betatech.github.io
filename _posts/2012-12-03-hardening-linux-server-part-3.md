@@ -69,8 +69,8 @@ You're presented with a list of rules you've written for your firewall. If you s
 
   
 
-[1]: http://www.linuxtechtips.com/2012/12/hardening-linux-server-part-2.html
-[2]: http://www.linuxtechtips.com/2012/12/hardening-linux-server-part-4.html
-[3]: http://www.linuxtechtips.com/2012/12/hardening-linux-server-part-2.html
-[4]: http://www.linuxtechtips.com/2012/12/hardening-linux-server-part-4.html
+[1]: https://www.linuxtechtips.com/2012/12/hardening-linux-server-part-2.html
+[2]: https://www.linuxtechtips.com/2012/12/hardening-linux-server-part-4.html
+[3]: https://www.linuxtechtips.com/2012/12/hardening-linux-server-part-2.html
+[4]: https://www.linuxtechtips.com/2012/12/hardening-linux-server-part-4.html
 

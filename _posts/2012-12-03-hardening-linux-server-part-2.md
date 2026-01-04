@@ -165,8 +165,8 @@ Another step you can take to harden SSH on your server is to allow only certain 
 
 [<< Part 1][3]                                                                                                                 [Part 3 >>][4]
 
-[1]: http://www.linuxtechtips.com/2012/11/hardening-linux-server.html
-[2]: http://www.linuxtechtips.com/2012/12/hardening-linux-server-part-3.html
-[3]: http://www.linuxtechtips.com/2012/11/hardening-linux-server.html
-[4]: http://www.linuxtechtips.com/2012/12/hardening-linux-server-part-3.html
+[1]: https://www.linuxtechtips.com/2012/11/hardening-linux-server.html
+[2]: https://www.linuxtechtips.com/2012/12/hardening-linux-server-part-3.html
+[3]: https://www.linuxtechtips.com/2012/11/hardening-linux-server.html
+[4]: https://www.linuxtechtips.com/2012/12/hardening-linux-server-part-3.html
 

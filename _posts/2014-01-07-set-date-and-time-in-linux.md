@@ -9,11 +9,11 @@ tags:
 imagefeature: date.png
 modified_time: '2014-01-07T12:46:22.744+05:30'
 thumbnail: >-
-  http://2.bp.blogspot.com/-JwAjLVeqzGw/UqAQW7Am7XI/AAAAAAAAAvQ/Q3S4yIAJk2k/s72-c/date.png
+  https://2.bp.blogspot.com/-JwAjLVeqzGw/UqAQW7Am7XI/AAAAAAAAAvQ/Q3S4yIAJk2k/s72-c/date.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-7221656585757148354'
 blogger_orig_url: 'https://www.linuxtechtips.com/2013/12/set-date-and-time-in-linux.html'
 ---
-[![](http://2.bp.blogspot.com/-JwAjLVeqzGw/UqAQW7Am7XI/AAAAAAAAAvQ/Q3S4yIAJk2k/s640/date.png)][1]
+[![](https://2.bp.blogspot.com/-JwAjLVeqzGw/UqAQW7Am7XI/AAAAAAAAAvQ/Q3S4yIAJk2k/s640/date.png)][1]
 
   
 
@@ -97,5 +97,5 @@ If the other way around, to set the system time from the hardware clock
 
   
 
-[1]: http://2.bp.blogspot.com/-JwAjLVeqzGw/UqAQW7Am7XI/AAAAAAAAAvQ/Q3S4yIAJk2k/s1600/date.png
+[1]: https://2.bp.blogspot.com/-JwAjLVeqzGw/UqAQW7Am7XI/AAAAAAAAAvQ/Q3S4yIAJk2k/s1600/date.png
 

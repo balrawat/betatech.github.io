@@ -8,12 +8,12 @@ tags:
   - logrotate
 modified_time: '2013-11-08T12:05:40.897+05:30'
 thumbnail: >-
-  http://2.bp.blogspot.com/-oxZJUs_4KkI/UnyAyly5xmI/AAAAAAAAAnE/DDmetiQHuCg/s72-c/log-rotate.png
+  https://2.bp.blogspot.com/-oxZJUs_4KkI/UnyAyly5xmI/AAAAAAAAAnE/DDmetiQHuCg/s72-c/log-rotate.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-3754462719174747917'
 blogger_orig_url: >-
   https://www.linuxtechtips.com/2013/11/setting-up-logrotate-on-centosredhat.html
 ---
-[![](http://2.bp.blogspot.com/-oxZJUs_4KkI/UnyAyly5xmI/AAAAAAAAAnE/DDmetiQHuCg/s1600/log-rotate.png)][1]
+[![](https://2.bp.blogspot.com/-oxZJUs_4KkI/UnyAyly5xmI/AAAAAAAAAnE/DDmetiQHuCg/s1600/log-rotate.png)][1]
 
 **1. Introduction**
 
@@ -201,5 +201,5 @@ $ man logrotate
 
   
 
-[1]: http://2.bp.blogspot.com/-oxZJUs_4KkI/UnyAyly5xmI/AAAAAAAAAnE/DDmetiQHuCg/s1600/log-rotate.png
+[1]: https://2.bp.blogspot.com/-oxZJUs_4KkI/UnyAyly5xmI/AAAAAAAAAnE/DDmetiQHuCg/s1600/log-rotate.png
 

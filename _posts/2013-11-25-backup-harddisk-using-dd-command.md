@@ -8,11 +8,11 @@ tags:
   - copy drive
 modified_time: '2013-11-25T15:46:02.192+05:30'
 thumbnail: >-
-  http://3.bp.blogspot.com/-Gt36s1Jh0r0/UpMjHvBDfHI/AAAAAAAAAsA/CkppsNPabkk/s72-c/dd.png
+  https://3.bp.blogspot.com/-Gt36s1Jh0r0/UpMjHvBDfHI/AAAAAAAAAsA/CkppsNPabkk/s72-c/dd.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-301842551935014901'
 blogger_orig_url: 'https://www.linuxtechtips.com/2013/11/backup-harddisk-using-dd-command.html'
 ---
-[![](http://3.bp.blogspot.com/-Gt36s1Jh0r0/UpMjHvBDfHI/AAAAAAAAAsA/CkppsNPabkk/s1600/dd.png)][1]
+[![](https://3.bp.blogspot.com/-Gt36s1Jh0r0/UpMjHvBDfHI/AAAAAAAAAsA/CkppsNPabkk/s1600/dd.png)][1]
 
 **Overview**
 
@@ -66,5 +66,5 @@ dd command reads one block of input and process it and writes it into an output 
 
 **Note:** If CD is auto mounted, before creating an iso image using dd command, its always good if you unmount the CD device to avoid any unnecessary access to the CD ROM.
 
-[1]: http://3.bp.blogspot.com/-Gt36s1Jh0r0/UpMjHvBDfHI/AAAAAAAAAsA/CkppsNPabkk/s1600/dd.png
+[1]: https://3.bp.blogspot.com/-Gt36s1Jh0r0/UpMjHvBDfHI/AAAAAAAAAsA/CkppsNPabkk/s1600/dd.png
 

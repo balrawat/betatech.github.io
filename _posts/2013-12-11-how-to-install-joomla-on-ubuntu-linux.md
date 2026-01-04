@@ -9,12 +9,12 @@ tags:
   - apache
 modified_time: '2013-12-11T18:47:56.863+05:30'
 thumbnail: >-
-  http://1.bp.blogspot.com/-DWK0XXQbCU4/Uqhlw8CTytI/AAAAAAAAAxA/7vqklV6UrRY/s72-c/joomla_on_ubuntu.png
+  https://1.bp.blogspot.com/-DWK0XXQbCU4/Uqhlw8CTytI/AAAAAAAAAxA/7vqklV6UrRY/s72-c/joomla_on_ubuntu.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-3146657468563563069'
 blogger_orig_url: >-
   https://www.linuxtechtips.com/2013/12/how-to-install-joomla-on-ubuntu-linux.html
 ---
-[![](http://1.bp.blogspot.com/-DWK0XXQbCU4/Uqhlw8CTytI/AAAAAAAAAxA/7vqklV6UrRY/s640/joomla_on_ubuntu.png)][1]
+[![](https://1.bp.blogspot.com/-DWK0XXQbCU4/Uqhlw8CTytI/AAAAAAAAAxA/7vqklV6UrRY/s640/joomla_on_ubuntu.png)][1]
 
 ###   
 
@@ -64,7 +64,7 @@ Then you can go ahead and download the most recent version of Joomla straight fr
 
   
 
-_\# wget http://joomlacode.org/gf/download/frsrelease/17410/76021/Joomla\_2.5.7-Stable-Full\_Package.tar.gz_
+_\# wget https://joomlacode.org/gf/download/frsrelease/17410/76021/Joomla\_2.5.7-Stable-Full\_Package.tar.gz_
 
   
 
@@ -212,8 +212,8 @@ Visit your domain or IP address to see your new Joomla page
 
   
 
-[1]: http://1.bp.blogspot.com/-DWK0XXQbCU4/Uqhlw8CTytI/AAAAAAAAAxA/7vqklV6UrRY/s1600/joomla_on_ubuntu.png
-[2]: http://www.linuxtechtips.com/2013/12/steps-to-follow-after-linux-server-installation.html
-[3]: http://www.linuxtechtips.com/2013/12/how-to-install-linux-apache-mysql-php.html
-[4]: http://joomlacode.org/gf/project/joomla/frs/?action=FrsReleaseBrowse&frs_package_id=6490
+[1]: https://1.bp.blogspot.com/-DWK0XXQbCU4/Uqhlw8CTytI/AAAAAAAAAxA/7vqklV6UrRY/s1600/joomla_on_ubuntu.png
+[2]: https://www.linuxtechtips.com/2013/12/steps-to-follow-after-linux-server-installation.html
+[3]: https://www.linuxtechtips.com/2013/12/how-to-install-linux-apache-mysql-php.html
+[4]: https://joomlacode.org/gf/project/joomla/frs/?action=FrsReleaseBrowse&frs_package_id=6490
 

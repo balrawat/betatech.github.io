@@ -8,14 +8,14 @@ tags:
   - Job control
 modified_time: '2013-11-29T11:58:05.422+05:30'
 thumbnail: >-
-  http://1.bp.blogspot.com/-tw425JghJnA/UpXvXV76GjI/AAAAAAAAAtg/to6uV0fJ2bo/s72-c/job.png
+  https://1.bp.blogspot.com/-tw425JghJnA/UpXvXV76GjI/AAAAAAAAAtg/to6uV0fJ2bo/s72-c/job.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-1918029373346486506'
 blogger_orig_url: >-
   https://www.linuxtechtips.com/2013/11/process-and-job-control-in-linuxunix.html
 ---
   
 
-[![](http://1.bp.blogspot.com/-tw425JghJnA/UpXvXV76GjI/AAAAAAAAAtg/to6uV0fJ2bo/s400/job.png)][1]
+[![](https://1.bp.blogspot.com/-tw425JghJnA/UpXvXV76GjI/AAAAAAAAAtg/to6uV0fJ2bo/s400/job.png)][1]
 
   
 
@@ -167,5 +167,5 @@ Note: It is not possible to kill off other users' processes !!!
 
   
 
-[1]: http://1.bp.blogspot.com/-tw425JghJnA/UpXvXV76GjI/AAAAAAAAAtg/to6uV0fJ2bo/s1600/job.png
+[1]: https://1.bp.blogspot.com/-tw425JghJnA/UpXvXV76GjI/AAAAAAAAAtg/to6uV0fJ2bo/s1600/job.png
 

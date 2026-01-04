@@ -7,11 +7,11 @@ tags:
   - redirection
 modified_time: '2013-12-01T13:03:03.388+05:30'
 thumbnail: >-
-  http://2.bp.blogspot.com/--qut1SkmLZk/UpXqAVXotuI/AAAAAAAAAs8/e4_l533GQEw/s72-c/redirection.png
+  https://2.bp.blogspot.com/--qut1SkmLZk/UpXqAVXotuI/AAAAAAAAAs8/e4_l533GQEw/s72-c/redirection.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-5112578020112203820'
 blogger_orig_url: 'https://www.linuxtechtips.com/2013/11/redirection-in-linux-and-unix.html'
 ---
-[![](http://2.bp.blogspot.com/--qut1SkmLZk/UpXqAVXotuI/AAAAAAAAAs8/e4_l533GQEw/s1600/redirection.png)][1]
+[![](https://2.bp.blogspot.com/--qut1SkmLZk/UpXqAVXotuI/AAAAAAAAAs8/e4_l533GQEw/s1600/redirection.png)][1]
 
 ** Redirection  **
 ------------------
@@ -202,5 +202,5 @@ Using pipes, display all lines of**list1**and**list2**containing the letter 'p',
 
   
 
-[1]: http://2.bp.blogspot.com/--qut1SkmLZk/UpXqAVXotuI/AAAAAAAAAs8/e4_l533GQEw/s1600/redirection.png
+[1]: https://2.bp.blogspot.com/--qut1SkmLZk/UpXqAVXotuI/AAAAAAAAAs8/e4_l533GQEw/s1600/redirection.png
 

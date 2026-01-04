@@ -9,11 +9,11 @@ tags:
   - AD authentication
 modified_time: '2013-11-22T18:26:32.137+05:30'
 thumbnail: >-
-  http://2.bp.blogspot.com/-uAyVMxYPKvY/Uo9UF4ztGrI/AAAAAAAAArA/JztgrPe8l1g/s72-c/adauth.png
+  https://2.bp.blogspot.com/-uAyVMxYPKvY/Uo9UF4ztGrI/AAAAAAAAArA/JztgrPe8l1g/s72-c/adauth.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-1690338798959393670'
 blogger_orig_url: 'https://www.linuxtechtips.com/2013/04/ad-authentication-in-linux.html'
 ---
-[![](http://2.bp.blogspot.com/-uAyVMxYPKvY/Uo9UF4ztGrI/AAAAAAAAArA/JztgrPe8l1g/s1600/adauth.png)][1]
+[![](https://2.bp.blogspot.com/-uAyVMxYPKvY/Uo9UF4ztGrI/AAAAAAAAArA/JztgrPe8l1g/s1600/adauth.png)][1]
 
   
 
@@ -59,5 +59,5 @@ Please share your experience on the above.
 
   
 
-[1]: http://2.bp.blogspot.com/-uAyVMxYPKvY/Uo9UF4ztGrI/AAAAAAAAArA/JztgrPe8l1g/s1600/adauth.png
+[1]: https://2.bp.blogspot.com/-uAyVMxYPKvY/Uo9UF4ztGrI/AAAAAAAAArA/JztgrPe8l1g/s1600/adauth.png
 

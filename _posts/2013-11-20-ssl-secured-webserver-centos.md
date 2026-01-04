@@ -10,11 +10,11 @@ tags:
   - https
 modified_time: '2013-11-20T10:31:41.809+05:30'
 thumbnail: >-
-  http://4.bp.blogspot.com/-zmAUfh-AZJs/Uom_Z1RP5RI/AAAAAAAAApU/8qsZwX1JwBk/s72-c/https.png
+  https://4.bp.blogspot.com/-zmAUfh-AZJs/Uom_Z1RP5RI/AAAAAAAAApU/8qsZwX1JwBk/s72-c/https.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-7343155710483564998'
 blogger_orig_url: 'https://www.linuxtechtips.com/2013/11/ssl-secured-webserver-centos.html'
 ---
-[![](http://4.bp.blogspot.com/-zmAUfh-AZJs/Uom_Z1RP5RI/AAAAAAAAApU/8qsZwX1JwBk/s1600/https.png)][1]
+[![](https://4.bp.blogspot.com/-zmAUfh-AZJs/Uom_Z1RP5RI/AAAAAAAAApU/8qsZwX1JwBk/s1600/https.png)][1]
 
   
 
@@ -144,8 +144,8 @@ iptables -L -v
 
   
 
-[1]: http://4.bp.blogspot.com/-zmAUfh-AZJs/Uom_Z1RP5RI/AAAAAAAAApU/8qsZwX1JwBk/s1600/https.png
-[2]: http://wiki.centos.org/VirtualHosts
-[3]: http://wiki.centos.org/VirtualHost
-[4]: http://wiki.centos.org/VirtualHost
+[1]: https://4.bp.blogspot.com/-zmAUfh-AZJs/Uom_Z1RP5RI/AAAAAAAAApU/8qsZwX1JwBk/s1600/https.png
+[2]: https://wiki.centos.org/VirtualHosts
+[3]: https://wiki.centos.org/VirtualHost
+[4]: https://wiki.centos.org/VirtualHost
 

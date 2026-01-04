@@ -9,11 +9,11 @@ tags:
   - bind9
 modified_time: '2013-11-08T12:17:49.331+05:30'
 thumbnail: >-
-  http://4.bp.blogspot.com/-bERkx9RU2hg/UnyJBwMVrLI/AAAAAAAAAn0/kVgaOwliJQA/s72-c/DNS3.png
+  https://4.bp.blogspot.com/-bERkx9RU2hg/UnyJBwMVrLI/AAAAAAAAAn0/kVgaOwliJQA/s72-c/DNS3.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-3742909536503461890'
 blogger_orig_url: 'https://www.linuxtechtips.com/2013/11/dns-server-configuration-on-linux.html'
 ---
-[![](http://4.bp.blogspot.com/-bERkx9RU2hg/UnyJBwMVrLI/AAAAAAAAAn0/kVgaOwliJQA/s1600/DNS3.png)][1]
+[![](https://4.bp.blogspot.com/-bERkx9RU2hg/UnyJBwMVrLI/AAAAAAAAAn0/kVgaOwliJQA/s1600/DNS3.png)][1]
 
   
 
@@ -367,5 +367,5 @@ Congratulations, you have just created and configured your own DNS zone using bi
 
   
 
-[1]: http://4.bp.blogspot.com/-bERkx9RU2hg/UnyJBwMVrLI/AAAAAAAAAn0/kVgaOwliJQA/s1600/DNS3.png
+[1]: https://4.bp.blogspot.com/-bERkx9RU2hg/UnyJBwMVrLI/AAAAAAAAAn0/kVgaOwliJQA/s1600/DNS3.png
 

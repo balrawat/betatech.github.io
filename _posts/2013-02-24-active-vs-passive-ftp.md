@@ -11,7 +11,7 @@ tags:
   - ftp modes
 modified_time: '2014-01-07T12:52:15.569+05:30'
 thumbnail: >-
-  http://4.bp.blogspot.com/-b4CsQvy4MM4/USnklu9foBI/AAAAAAAAASc/RZddGj_zT7c/s72-c/1.png
+  https://4.bp.blogspot.com/-b4CsQvy4MM4/USnklu9foBI/AAAAAAAAASc/RZddGj_zT7c/s72-c/1.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-6302645972960415183'
 blogger_orig_url: 'https://www.linuxtechtips.com/2013/02/active-vs-passive-ftp.html'
 ---
@@ -29,7 +29,7 @@ A typical FTP session operates using two channels: a command (or control) channe
 
 Unless you configure your FTP server differently, you will normally set your command channel to use port 21. The port you'll use for the data channel, on the other hand, can differ depending on which data transfer mode you choose. If you choose active mode, then the data channel will normally be port 20. But if you choose passive mode, then the port that will be used will be a random port. 
 
-[![](http://4.bp.blogspot.com/-b4CsQvy4MM4/USnklu9foBI/AAAAAAAAASc/RZddGj_zT7c/s1600/1.png)][1]
+[![](https://4.bp.blogspot.com/-b4CsQvy4MM4/USnklu9foBI/AAAAAAAAASc/RZddGj_zT7c/s1600/1.png)][1]
 
   
 
@@ -44,7 +44,7 @@ Here's a simplified explanation on how an active mode connection is carried out,
 1.  A user connects from a random port on a file transfer client to port 21 on the server. It sends the PORT command, specifying what client-side port the server should connect to. This port will be used later on for the data channel and is different from the port used in this step for the command channel.
 2.  The server connects from port 20 to the client port designated for the data channel. Once connection is established, file transfers are then made through these client and server ports.
 
-[![](http://4.bp.blogspot.com/-qZK35NAxm94/USnkluioQeI/AAAAAAAAASY/Yp9BwRDaMD0/s1600/2.png)][2]
+[![](https://4.bp.blogspot.com/-qZK35NAxm94/USnkluioQeI/AAAAAAAAASY/Yp9BwRDaMD0/s1600/2.png)][2]
 
 #### **Passive mode FTP**
 
@@ -55,7 +55,7 @@ Here's how passive mode works in a nutshell:
 1.  The client connects from a random port to port 21 on the server and issues the PASV command. The server replies, indicating which (random) port it has opened for data transfer. 
 2.  The client connects from another random port to the random port specified in the server's response. Once connection is established, data transfers are made through these client and server ports.
 
-[![](http://4.bp.blogspot.com/-XPrUgtQipJ8/USnkl0KTCqI/AAAAAAAAASg/0Sy6KaN70Ew/s1600/3.png)][3]
+[![](https://4.bp.blogspot.com/-XPrUgtQipJ8/USnkl0KTCqI/AAAAAAAAASg/0Sy6KaN70Ew/s1600/3.png)][3]
 
   
 
@@ -75,7 +75,7 @@ There shouldn't be any problem had there not been any firewalls in existence. Bu
 
 Remember that in an active mode configuration, the server will attempt to connect to a **random**client-side port. So chances are, that port wouldn't be one of those predefined ports. As a result, an attempt to connect to it will be blocked by the firewall and no connection will be established.
 
-[![](http://2.bp.blogspot.com/-i7wKZMOByq4/USnkmWUXEAI/AAAAAAAAASo/fKipRKFiTsY/s1600/4.png)][4]
+[![](https://2.bp.blogspot.com/-i7wKZMOByq4/USnkmWUXEAI/AAAAAAAAASo/fKipRKFiTsY/s1600/4.png)][4]
 
   
 
@@ -89,7 +89,7 @@ In this particular scenario, a passive configuration will not pose a problem. Th
 
   
 
-[![](http://1.bp.blogspot.com/--8frrShuXRY/USnkmlQ4irI/AAAAAAAAASw/T5kfaA8hojM/s1600/5.png)][5]
+[![](https://1.bp.blogspot.com/--8frrShuXRY/USnkmlQ4irI/AAAAAAAAASw/T5kfaA8hojM/s1600/5.png)][5]
 
 Of course, it's possible for the server side to have a firewall too. However, since the server is expected to receive a greater number of connection requests compared to a client, then it would be but logical for the server admin to adapt to the situation and open up a selection of ports to satisfy passive mode configurations.
 
@@ -111,7 +111,7 @@ For those of you who are already using FILEZILLA FTP Server, you can specify a r
 
   
 
-[![](http://3.bp.blogspot.com/-IH6imBiPOHI/USnobk0JhwI/AAAAAAAAATM/pvvh9rm_yIE/s1600/Capture.JPG)][6]
+[![](https://3.bp.blogspot.com/-IH6imBiPOHI/USnobk0JhwI/AAAAAAAAATM/pvvh9rm_yIE/s1600/Capture.JPG)][6]
 
   
 
@@ -121,10 +121,10 @@ For those of you who are already using FILEZILLA FTP Server, you can specify a r
 
 In the event that the IP address your server uses in responding to requests for passive connections is not routable via the Internet, you'll need to enter your public IP address in the **Passive IP** field. 
 
-[1]: http://4.bp.blogspot.com/-b4CsQvy4MM4/USnklu9foBI/AAAAAAAAASc/RZddGj_zT7c/s1600/1.png
-[2]: http://4.bp.blogspot.com/-qZK35NAxm94/USnkluioQeI/AAAAAAAAASY/Yp9BwRDaMD0/s1600/2.png
-[3]: http://4.bp.blogspot.com/-XPrUgtQipJ8/USnkl0KTCqI/AAAAAAAAASg/0Sy6KaN70Ew/s1600/3.png
-[4]: http://2.bp.blogspot.com/-i7wKZMOByq4/USnkmWUXEAI/AAAAAAAAASo/fKipRKFiTsY/s1600/4.png
-[5]: http://1.bp.blogspot.com/--8frrShuXRY/USnkmlQ4irI/AAAAAAAAASw/T5kfaA8hojM/s1600/5.png
-[6]: http://3.bp.blogspot.com/-IH6imBiPOHI/USnobk0JhwI/AAAAAAAAATM/pvvh9rm_yIE/s1600/Capture.JPG
+[1]: https://4.bp.blogspot.com/-b4CsQvy4MM4/USnklu9foBI/AAAAAAAAASc/RZddGj_zT7c/s1600/1.png
+[2]: https://4.bp.blogspot.com/-qZK35NAxm94/USnkluioQeI/AAAAAAAAASY/Yp9BwRDaMD0/s1600/2.png
+[3]: https://4.bp.blogspot.com/-XPrUgtQipJ8/USnkl0KTCqI/AAAAAAAAASg/0Sy6KaN70Ew/s1600/3.png
+[4]: https://2.bp.blogspot.com/-i7wKZMOByq4/USnkmWUXEAI/AAAAAAAAASo/fKipRKFiTsY/s1600/4.png
+[5]: https://1.bp.blogspot.com/--8frrShuXRY/USnkmlQ4irI/AAAAAAAAASw/T5kfaA8hojM/s1600/5.png
+[6]: https://3.bp.blogspot.com/-IH6imBiPOHI/USnobk0JhwI/AAAAAAAAATM/pvvh9rm_yIE/s1600/Capture.JPG
 

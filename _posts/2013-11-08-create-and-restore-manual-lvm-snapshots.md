@@ -9,12 +9,12 @@ tags:
   - lvm snapshot
 modified_time: '2013-11-08T12:01:21.261+05:30'
 thumbnail: >-
-  http://1.bp.blogspot.com/-cK8ZgtJZA00/UnyEyRENxlI/AAAAAAAAAnc/CKm6B9rdO7U/s72-c/LVM+snapshots.png
+  https://1.bp.blogspot.com/-cK8ZgtJZA00/UnyEyRENxlI/AAAAAAAAAnc/CKm6B9rdO7U/s72-c/LVM+snapshots.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-2506188966380852617'
 blogger_orig_url: >-
   https://www.linuxtechtips.com/2013/11/create-and-restore-manual-lvm-snapshots.html
 ---
-[![](http://1.bp.blogspot.com/-cK8ZgtJZA00/UnyEyRENxlI/AAAAAAAAAnc/CKm6B9rdO7U/s1600/LVM+snapshots.png)][1]
+[![](https://1.bp.blogspot.com/-cK8ZgtJZA00/UnyEyRENxlI/AAAAAAAAAnc/CKm6B9rdO7U/s1600/LVM+snapshots.png)][1]
 
 **1. Introduction**
 
@@ -438,5 +438,5 @@ The above was a basic example of snapshot manipulation using Logical Volume Mana
 
   
 
-[1]: http://1.bp.blogspot.com/-cK8ZgtJZA00/UnyEyRENxlI/AAAAAAAAAnc/CKm6B9rdO7U/s1600/LVM+snapshots.png
+[1]: https://1.bp.blogspot.com/-cK8ZgtJZA00/UnyEyRENxlI/AAAAAAAAAnc/CKm6B9rdO7U/s1600/LVM+snapshots.png
 

@@ -8,12 +8,12 @@ tags:
   - shell scripting
 modified_time: '2013-11-29T13:31:52.766+05:30'
 thumbnail: >-
-  http://4.bp.blogspot.com/-ORU9e-qu274/UpXroIkDMNI/AAAAAAAAAtM/WE-H5lA01E0/s72-c/wildcards-300x168.png
+  https://4.bp.blogspot.com/-ORU9e-qu274/UpXroIkDMNI/AAAAAAAAAtM/WE-H5lA01E0/s72-c/wildcards-300x168.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-2142506593002609686'
 blogger_orig_url: >-
   https://www.linuxtechtips.com/2013/11/how-wildcards-work-in-linux-and-unix.html
 ---
-[![](http://4.bp.blogspot.com/-ORU9e-qu274/UpXroIkDMNI/AAAAAAAAAtM/WE-H5lA01E0/s400/wildcards-300x168.png)][1]
+[![](https://4.bp.blogspot.com/-ORU9e-qu274/UpXroIkDMNI/AAAAAAAAAtM/WE-H5lA01E0/s400/wildcards-300x168.png)][1]
 
 **Wildcards**
 -------------
@@ -99,5 +99,5 @@ will give you the commands with keyword in their manual page header. For example
 
   
 
-[1]: http://4.bp.blogspot.com/-ORU9e-qu274/UpXroIkDMNI/AAAAAAAAAtM/WE-H5lA01E0/s1600/wildcards-300x168.png
+[1]: https://4.bp.blogspot.com/-ORU9e-qu274/UpXroIkDMNI/AAAAAAAAAtM/WE-H5lA01E0/s1600/wildcards-300x168.png
 

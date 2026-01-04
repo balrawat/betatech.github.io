@@ -25,17 +25,17 @@ Recently I came across a tool called Vagrant which can automate that process or 
   
 Make sure you've Virtual Box installed on your machine, if not already done, download from [https://www.virtualbox.org/wiki/Downloads][1] & install it. Its available for almost all popular platforms.  
   
-Download Vagrant from [http://downloads.vagrantup.com/][2] & install it.  
+Download Vagrant from [https://downloads.vagrantup.com/][2] & install it.  
   
 
 Binary packages available for MAC, Windows, debian & RPM based systems.
 
   
 
-I used Centos 6 heavily so I installed Centos 6. Location specific mirrors for Centos are available at [http://isoredirect.centos.org/centos/6/isos/x86_64/][3] . Make sure you have Centos6 CD/DVD downloaded.
+I used Centos 6 heavily so I installed Centos 6. Location specific mirrors for Centos are available at [https://isoredirect.centos.org/centos/6/isos/x86_64/][3] . Make sure you have Centos6 CD/DVD downloaded.
 
   
-Now create a virtual machine for you work in Virtual Box. Those who are new to it can check help here [http://www.virtualbox.org/manual/ch01.html][4]  
+Now create a virtual machine for you work in Virtual Box. Those who are new to it can check help here [https://www.virtualbox.org/manual/ch01.html][4]  
   
 
 Create a new VM by providing information like CPUs & RAM & HDD etc.
@@ -221,7 +221,7 @@ For windows hosts, use putty client & the key private key you saved earlier in t
   
 
 [1]: https://www.virtualbox.org/wiki/Downloads
-[2]: http://downloads.vagrantup.com/
-[3]: http://isoredirect.centos.org/centos/6/isos/x86_64/
-[4]: http://www.virtualbox.org/manual/ch01.html
+[2]: https://downloads.vagrantup.com/
+[3]: https://isoredirect.centos.org/centos/6/isos/x86_64/
+[4]: https://www.virtualbox.org/manual/ch01.html
 

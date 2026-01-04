@@ -8,12 +8,12 @@ tags:
   - linux installation
 modified_time: '2013-12-11T18:17:51.769+05:30'
 thumbnail: >-
-  http://2.bp.blogspot.com/-YCJ4eEEdL3A/UqhND5h8e2I/AAAAAAAAAwk/m5Q44HcUfgs/s72-c/linux-server.png
+  https://2.bp.blogspot.com/-YCJ4eEEdL3A/UqhND5h8e2I/AAAAAAAAAwk/m5Q44HcUfgs/s72-c/linux-server.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-7868308695725574731'
 blogger_orig_url: >-
   https://www.linuxtechtips.com/2013/12/steps-to-follow-after-linux-server-installation.html
 ---
-[![](http://2.bp.blogspot.com/-YCJ4eEEdL3A/UqhND5h8e2I/AAAAAAAAAwk/m5Q44HcUfgs/s400/linux-server.png)][1]
+[![](https://2.bp.blogspot.com/-YCJ4eEEdL3A/UqhND5h8e2I/AAAAAAAAAwk/m5Q44HcUfgs/s400/linux-server.png)][1]
 
 The Basics
 ==========
@@ -147,5 +147,5 @@ Save and Exit
 
   
 
-[1]: http://2.bp.blogspot.com/-YCJ4eEEdL3A/UqhND5h8e2I/AAAAAAAAAwk/m5Q44HcUfgs/s1600/linux-server.png
+[1]: https://2.bp.blogspot.com/-YCJ4eEEdL3A/UqhND5h8e2I/AAAAAAAAAwk/m5Q44HcUfgs/s1600/linux-server.png
 

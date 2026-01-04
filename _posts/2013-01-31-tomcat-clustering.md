@@ -447,7 +447,7 @@ worker.fastserver.host=$(myOtherHost)
 
 Using this technique, you can create whole cluster profiles simply by referencing these archetypes, and migrate entire configurations to new servers by changing just a few variables.
 
-For a more in-depth look at defining workers, and some more inspiration for tricky configurations, visit the Workers HowTo \[[http://tomcat.apache.org/connectors-doc/generic_howto/workers.html\]][12] article on Apache's website.
+For a more in-depth look at defining workers, and some more inspiration for tricky configurations, visit the Workers HowTo \[[https://tomcat.apache.org/connectors-doc/generic_howto/workers.html\]][12] article on Apache's website.
 
   
 
@@ -716,18 +716,18 @@ This element listens to all messages sent through by cluster workers, and interc
 
 Once you have edited your server.xml file, simply restart the server, and you will have a cluster-enabled Tomcat instance up and running! Note that you will need to add this configuration to each Tomcat instance you wish to add to the cluster as a worker, and that each Engine element must have its own unique jvmRoute.
 
-[1]: http://www.linuxtechtips.com/2013/01/tomcat-clustering.html
-[2]: http://www.linuxtechtips.com/2013/01/tomcat-cluster-configuration.html
+[1]: https://www.linuxtechtips.com/2013/01/tomcat-clustering.html
+[2]: https://www.linuxtechtips.com/2013/01/tomcat-cluster-configuration.html
 [3]: https://www.blogger.com/blogger.g?blogID=6814921223515313000
 [4]: http://httpd.apache.org/
-[5]: http://tomcat.apache.org/
+[5]: https://tomcat.apache.org/
 [6]: http://httpd.apache.org/docs/2.1/install.html
-[7]: http://www.apache.org/dist/tomcat/tomcat-connectors/jk/binaries/
+[7]: https://www.apache.org/dist/tomcat/tomcat-connectors/jk/binaries/
 [8]: https://www.blogger.com/blogger.g?blogID=6814921223515313000
-[9]: http://tomcat.apache.org/connectors-doc/reference/workers.html
-[10]: http://tomcat.apache.org/download-connectors.cgi
-[11]: http://tomcat.apache.org/connectors-doc/generic_howto/loadbalancers.html
-[12]: http://tomcat.apache.org/connectors-doc/generic_howto/workers.html%5D
+[9]: https://tomcat.apache.org/connectors-doc/reference/workers.html
+[10]: https://tomcat.apache.org/download-connectors.cgi
+[11]: https://tomcat.apache.org/connectors-doc/generic_howto/loadbalancers.html
+[12]: https://tomcat.apache.org/connectors-doc/generic_howto/workers.html%5D
 [13]: https://www.blogger.com/blogger.g?blogID=6814921223515313000
 [14]: http://support.ntp.org/bin/view/Servers/WebHome
 

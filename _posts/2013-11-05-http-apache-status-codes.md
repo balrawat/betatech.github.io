@@ -9,17 +9,17 @@ tags:
   - apache
 modified_time: '2013-11-05T13:32:36.386+05:30'
 thumbnail: >-
-  http://2.bp.blogspot.com/-Tvvfz3CA33k/UnimD4gtMBI/AAAAAAAAAmw/uEj5zUQkVmA/s72-c/page-error.png
+  https://2.bp.blogspot.com/-Tvvfz3CA33k/UnimD4gtMBI/AAAAAAAAAmw/uEj5zUQkVmA/s72-c/page-error.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-679006789991658056'
 blogger_orig_url: 'https://www.linuxtechtips.com/2013/11/http-apache-status-codes.html'
 ---
-[![](http://2.bp.blogspot.com/-Tvvfz3CA33k/UnimD4gtMBI/AAAAAAAAAmw/uEj5zUQkVmA/s1600/page-error.png)][1]
+[![](https://2.bp.blogspot.com/-Tvvfz3CA33k/UnimD4gtMBI/AAAAAAAAAmw/uEj5zUQkVmA/s1600/page-error.png)][1]
 
   
   
 HTTP, Hypertext Transfer Protocol, is the method by which clients (i.e. you) and servers communicate. When someone clicks a link, types in a URL or submits out a form, their browser sends a request to a server for information. It might be asking for a page, or sending data, but either way, that is called an HTTP Request. When a server receives that request, it sends back an HTTP Response, with information for the client. Usually, this is invisible, though I'm sure you've seen one of the very common Response codes - 404, indicating a page was not found. There are a fair few more status codes sent by servers, and the following is a list of the current ones in HTTP 1.1, along with an explanation of their meanings.
 
-A more technical breakdown of HTTP 1.1 status codes and their meanings is available at[http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html][2]. There are several versions of HTTP, but currently HTTP 1.1 is the most widely used.
+A more technical breakdown of HTTP 1.1 status codes and their meanings is available at[https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html][2]. There are several versions of HTTP, but currently HTTP 1.1 is the most widely used.
 
 ### Informational
 
@@ -188,6 +188,6 @@ A more technical breakdown of HTTP 1.1 status codes and their meanings is availa
 
   
 
-[1]: http://2.bp.blogspot.com/-Tvvfz3CA33k/UnimD4gtMBI/AAAAAAAAAmw/uEj5zUQkVmA/s1600/page-error.png
-[2]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
+[1]: https://2.bp.blogspot.com/-Tvvfz3CA33k/UnimD4gtMBI/AAAAAAAAAmw/uEj5zUQkVmA/s1600/page-error.png
+[2]: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
 

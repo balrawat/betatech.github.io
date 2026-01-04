@@ -9,12 +9,12 @@ tags:
   - fail2ban
 modified_time: '2014-01-07T12:45:52.025+05:30'
 thumbnail: >-
-  http://2.bp.blogspot.com/-6zPfAFP2WgI/UqhFCHqS6BI/AAAAAAAAAwM/Mtf7Oz4ELjc/s72-c/fail2ban.png
+  https://2.bp.blogspot.com/-6zPfAFP2WgI/UqhFCHqS6BI/AAAAAAAAAwM/Mtf7Oz4ELjc/s72-c/fail2ban.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-3690195495586961123'
 blogger_orig_url: >-
   https://www.linuxtechtips.com/2013/12/how-to-protect-ssh-with-fail2ban-on-linux.html
 ---
-[![](http://2.bp.blogspot.com/-6zPfAFP2WgI/UqhFCHqS6BI/AAAAAAAAAwM/Mtf7Oz4ELjc/s400/fail2ban.png)][1]
+[![](https://2.bp.blogspot.com/-6zPfAFP2WgI/UqhFCHqS6BI/AAAAAAAAAwM/Mtf7Oz4ELjc/s400/fail2ban.png)][1]
 
 **About Fail2Ban**
 
@@ -39,7 +39,7 @@ We need [epel repo][2]to install fail2ban on RHEL/Centos based machines.
 
 So, download the rpm:-
 
-_\# wget [http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm][3]_
+_\# wget [https://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm][3]_
 
 and, then install fail2ban
 
@@ -303,7 +303,7 @@ _\# iptables -L_
 
   
 
-[1]: http://2.bp.blogspot.com/-6zPfAFP2WgI/UqhFCHqS6BI/AAAAAAAAAwM/Mtf7Oz4ELjc/s1600/fail2ban.png
-[2]: http://www.linuxtechtips.com/2012/11/installing-rhel-epel-repo-on-centos-5x.html
-[3]: http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+[1]: https://2.bp.blogspot.com/-6zPfAFP2WgI/UqhFCHqS6BI/AAAAAAAAAwM/Mtf7Oz4ELjc/s1600/fail2ban.png
+[2]: https://www.linuxtechtips.com/2012/11/installing-rhel-epel-repo-on-centos-5x.html
+[3]: https://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 

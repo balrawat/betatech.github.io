@@ -9,12 +9,12 @@ tags:
   - nfs server
 modified_time: '2013-11-08T12:03:56.480+05:30'
 thumbnail: >-
-  http://3.bp.blogspot.com/-InZP20sz6Eg/UnyC4Le6YtI/AAAAAAAAAnQ/lHDFDlXTnxI/s72-c/nfs.png
+  https://3.bp.blogspot.com/-InZP20sz6Eg/UnyC4Le6YtI/AAAAAAAAAnQ/lHDFDlXTnxI/s72-c/nfs.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-8981667642659805114'
 blogger_orig_url: >-
   https://www.linuxtechtips.com/2013/11/configuring-nfs-on-centosredhat-linux.html
 ---
-[![](http://3.bp.blogspot.com/-InZP20sz6Eg/UnyC4Le6YtI/AAAAAAAAAnQ/lHDFDlXTnxI/s1600/nfs.png)][1]
+[![](https://3.bp.blogspot.com/-InZP20sz6Eg/UnyC4Le6YtI/AAAAAAAAAnQ/lHDFDlXTnxI/s1600/nfs.png)][1]
 
 **1. Introduction**
 
@@ -378,8 +378,8 @@ Now your server is ready to accept client nfs requests. Optionally, you may rest
 
   
 
-[1]: http://3.bp.blogspot.com/-InZP20sz6Eg/UnyC4Le6YtI/AAAAAAAAAnQ/lHDFDlXTnxI/s1600/nfs.png
-[2]: http://en.wikipedia.org/wiki/Remote_procedure_call
-[3]: http://tldp.org/HOWTO/NFS-HOWTO/index.html
-[4]: http://nfs.sourceforge.net/
+[1]: https://3.bp.blogspot.com/-InZP20sz6Eg/UnyC4Le6YtI/AAAAAAAAAnQ/lHDFDlXTnxI/s1600/nfs.png
+[2]: https://en.wikipedia.org/wiki/Remote_procedure_call
+[3]: https://tldp.org/HOWTO/NFS-HOWTO/index.html
+[4]: https://nfs.sourceforge.net/
 

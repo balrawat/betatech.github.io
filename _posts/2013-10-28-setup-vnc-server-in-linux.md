@@ -9,11 +9,11 @@ tags:
   - remote vnc
 modified_time: '2013-10-28T12:31:52.017+05:30'
 thumbnail: >-
-  http://1.bp.blogspot.com/-wZjMD6n9M7c/Um4L0GwsvII/AAAAAAAAAl0/DifpqNRZ2Go/s72-c/vnc1.png
+  https://1.bp.blogspot.com/-wZjMD6n9M7c/Um4L0GwsvII/AAAAAAAAAl0/DifpqNRZ2Go/s72-c/vnc1.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-4678944531279225185'
 blogger_orig_url: 'https://www.linuxtechtips.com/2013/10/setup-vnc-server-in-linux.html'
 ---
-[![](http://1.bp.blogspot.com/-wZjMD6n9M7c/Um4L0GwsvII/AAAAAAAAAl0/DifpqNRZ2Go/s320/vnc1.png)][1]
+[![](https://1.bp.blogspot.com/-wZjMD6n9M7c/Um4L0GwsvII/AAAAAAAAAl0/DifpqNRZ2Go/s320/vnc1.png)][1]
 
   
 
@@ -199,5 +199,5 @@ Move over to a machine that can display graphics (if your server does, you can t
 
 There you go! You should now have a working VNC server on your Linux box
 
-[1]: http://1.bp.blogspot.com/-wZjMD6n9M7c/Um4L0GwsvII/AAAAAAAAAl0/DifpqNRZ2Go/s1600/vnc1.png
+[1]: https://1.bp.blogspot.com/-wZjMD6n9M7c/Um4L0GwsvII/AAAAAAAAAl0/DifpqNRZ2Go/s1600/vnc1.png
 

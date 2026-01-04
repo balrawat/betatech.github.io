@@ -11,11 +11,11 @@ tags:
   - tomcat
 modified_time: '2014-01-07T12:52:46.525+05:30'
 thumbnail: >-
-  http://4.bp.blogspot.com/-NChdPh4didE/Uo9VGNcsdZI/AAAAAAAAArI/rfF-JyOxg14/s72-c/tomcat-load-balancing.png
+  https://4.bp.blogspot.com/-NChdPh4didE/Uo9VGNcsdZI/AAAAAAAAArI/rfF-JyOxg14/s72-c/tomcat-load-balancing.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-7562630654014742159'
 blogger_orig_url: 'https://www.linuxtechtips.com/2013/01/tomcat-cluster-configuration.html'
 ---
-![](http://4.bp.blogspot.com/-NChdPh4didE/Uo9VGNcsdZI/AAAAAAAAArI/rfF-JyOxg14/s1600/tomcat-load-balancing.png)
+![](https://4.bp.blogspot.com/-NChdPh4didE/Uo9VGNcsdZI/AAAAAAAAArI/rfF-JyOxg14/s1600/tomcat-load-balancing.png)
 
   
 Just because Tomcat is a lightweight container with a small footprint doesn't mean it isn't ready to deliver big performance under real-world loads. Tomcat's built-in support for clustering, load balancing, and session persistence means that you can add more power to your network as you need it, allowing your site to scale with your user base.
@@ -165,15 +165,15 @@ Tomcat provides fairly sophisticated clustering support, including several kinds
 
 To help you get started, we've created a step by step guide to [Tomcat Clustering][11], in which we walk you through everything you need to do to get a simple Tomcat cluster with session replication running behind Apache HTTPD. Check it out!
 
-[1]: http://nginx.org/
-[2]: http://haproxy.1wt.eu/
-[3]: http://www.backhand.org/wackamole/
-[4]: http://www.spread.org/
-[5]: http://barry.wordpress.com/2008/04/28/load-balancer-update/
-[6]: http://www.howtoforge.com/setting-up-a-high-availability-load-balancer-with-haproxy-wackamole-spread-on-debian-etch
-[7]: http://www.zeus.com/products/load-balancer/
-[8]: http://www.apsis.ch/pound/
-[9]: http://www.linuxvirtualserver.org/
-[10]: http://www.terracotta.org/
-[11]: http://www.linuxtechtips.com/2013/01/tomcat-clustering.html
+[1]: https://nginx.org/
+[2]: https://haproxy.1wt.eu/
+[3]: https://www.backhand.org/wackamole/
+[4]: https://www.spread.org/
+[5]: https://barry.wordpress.com/2008/04/28/load-balancer-update/
+[6]: https://www.howtoforge.com/setting-up-a-high-availability-load-balancer-with-haproxy-wackamole-spread-on-debian-etch
+[7]: https://www.zeus.com/products/load-balancer/
+[8]: https://www.apsis.ch/pound/
+[9]: https://www.linuxvirtualserver.org/
+[10]: https://www.terracotta.org/
+[11]: https://www.linuxtechtips.com/2013/01/tomcat-clustering.html
 

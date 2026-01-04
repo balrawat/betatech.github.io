@@ -176,7 +176,7 @@ service network restart
 
 Optional: Managing libvirt with standard user account
 
-Beginning in CentOS 6 access to managing libvirt is handled by \[http://wiki.libvirt.org/page/SSHPolicyKitSetup PolicyKit\]. It’s always a good practice to do your daily administration tasks as some user besides root, and using PolicyKit you can give access to libvirt functions to a standard account.
+Beginning in CentOS 6 access to managing libvirt is handled by \[https://wiki.libvirt.org/page/SSHPolicyKitSetup PolicyKit\]. It’s always a good practice to do your daily administration tasks as some user besides root, and using PolicyKit you can give access to libvirt functions to a standard account.
 
   
 

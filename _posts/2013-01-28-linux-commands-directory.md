@@ -30,6 +30,6 @@ Here is a complete linux command reference:
   
   
 
-[1]: http://www.cygwin.com/
-[2]: http://oreilly.com/linux/command-directory/
+[1]: https://www.cygwin.com/
+[2]: https://oreilly.com/linux/command-directory/
 

@@ -75,7 +75,7 @@ yum install cairo-devel libxml2-devel pango-devel pango libpng-devel freetype fr
 
 \# Download, compile and install RDDTools
 
-wget [http://oss.oetiker.ch/rrdtool/pub/rrdtool-1.4.5.tar.gz][2]
+wget [https://oss.oetiker.ch/rrdtool/pub/rrdtool-1.4.5.tar.gz][2]
 
 tar xvzf rrdtool-1.4.5.tar.gz
 
@@ -95,7 +95,7 @@ make install
 
 \# Download, compile and Install GeopIP
 
-wget [http://geolite.maxmind.com/download/geoip/api/c/GeoIP.tar.gz][3]
+wget [https://geolite.maxmind.com/download/geoip/api/c/GeoIP.tar.gz][3]
 
 tar xvzf GeoIP.tar.gz
 
@@ -119,7 +119,7 @@ NOTE: config at: /usr/local/etc/GeoIP.conf
 
 #Download, compile and install nTop 4.0.1
 
-wget [http://cdnetworks-us-1.dl.sourceforge.net/project/ntop/ntop/ntop-4.0.1/ntop-4.0.1.tar.gz][4]
+wget [https://cdnetworks-us-1.dl.sourceforge.net/project/ntop/ntop/ntop-4.0.1/ntop-4.0.1.tar.gz][4]
 
 tar xvzf ntop4.0.1.tar.gz
 
@@ -211,11 +211,11 @@ Where,
 
 By default ntop listen on 3000 port. You can view ntop stats by visiting following url:
 
-[http://localhost:3000/][5]
+[https://localhost:3000/][5]
 
 [1]: http://apt.sw.be/redhat/el5/en/x86_64/rpmforge/RPMS//rpmforge-release-0.3.6-1.el5.rf.x86_64.rpm
-[2]: http://oss.oetiker.ch/rrdtool/pub/rrdtool-1.4.5.tar.gz
-[3]: http://geolite.maxmind.com/download/geoip/api/c/GeoIP.tar.gz
-[4]: http://cdnetworks-us-1.dl.sourceforge.net/project/ntop/ntop/ntop-4.0.1/ntop-4.0.1.tar.gz
-[5]: http://localhost:3000/
+[2]: https://oss.oetiker.ch/rrdtool/pub/rrdtool-1.4.5.tar.gz
+[3]: https://geolite.maxmind.com/download/geoip/api/c/GeoIP.tar.gz
+[4]: https://cdnetworks-us-1.dl.sourceforge.net/project/ntop/ntop/ntop-4.0.1/ntop-4.0.1.tar.gz
+[5]: https://localhost:3000/
 

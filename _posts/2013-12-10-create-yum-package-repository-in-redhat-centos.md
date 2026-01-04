@@ -9,12 +9,12 @@ tags:
   - yum
 modified_time: '2013-12-13T14:00:39.826+05:30'
 thumbnail: >-
-  http://2.bp.blogspot.com/-NS293WxpQ5g/UoWxtFwisjI/AAAAAAAAAoo/nc9r_oUWGjI/s72-c/yum.png
+  https://2.bp.blogspot.com/-NS293WxpQ5g/UoWxtFwisjI/AAAAAAAAAoo/nc9r_oUWGjI/s72-c/yum.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-5693118972823661278'
 blogger_orig_url: >-
   https://www.linuxtechtips.com/2013/12/create-yum-package-repository-in-redhat-centos.html
 ---
-[![](http://2.bp.blogspot.com/-NS293WxpQ5g/UoWxtFwisjI/AAAAAAAAAoo/nc9r_oUWGjI/s1600/yum.png)][1]
+[![](https://2.bp.blogspot.com/-NS293WxpQ5g/UoWxtFwisjI/AAAAAAAAAoo/nc9r_oUWGjI/s1600/yum.png)][1]
 
 **1. Introduction**
 
@@ -226,7 +226,7 @@ name=RHEL\_6.4\_x86\_64\_HTTP
 
   
 
-baseurl="http://myhost/rhel_repo/"
+baseurl="https://myhost/rhel_repo/"
 
   
 
@@ -264,5 +264,5 @@ Creating your own package repository gives you more options on how to manage pac
 
   
 
-[1]: http://2.bp.blogspot.com/-NS293WxpQ5g/UoWxtFwisjI/AAAAAAAAAoo/nc9r_oUWGjI/s1600/yum.png
+[1]: https://2.bp.blogspot.com/-NS293WxpQ5g/UoWxtFwisjI/AAAAAAAAAoo/nc9r_oUWGjI/s1600/yum.png
 

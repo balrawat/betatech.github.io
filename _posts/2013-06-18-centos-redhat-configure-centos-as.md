@@ -8,11 +8,11 @@ tags:
   - router
 modified_time: '2014-01-07T12:51:11.878+05:30'
 thumbnail: >-
-  http://3.bp.blogspot.com/-peke76gt-wo/Uo7pDIYYeII/AAAAAAAAApo/3Teg6vx8BNU/s72-c/router.png
+  https://3.bp.blogspot.com/-peke76gt-wo/Uo7pDIYYeII/AAAAAAAAApo/3Teg6vx8BNU/s72-c/router.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-7884711947305370494'
 blogger_orig_url: 'https://www.linuxtechtips.com/2013/06/centos-redhat-configure-centos-as.html'
 ---
-[![](http://3.bp.blogspot.com/-peke76gt-wo/Uo7pDIYYeII/AAAAAAAAApo/3Teg6vx8BNU/s1600/router.png)][1]
+[![](https://3.bp.blogspot.com/-peke76gt-wo/Uo7pDIYYeII/AAAAAAAAApo/3Teg6vx8BNU/s1600/router.png)][1]
 
   
 
@@ -98,5 +98,5 @@ Open your Windows / Mac / Linux computer networking GUI tool and point router IP
 
   
 
-[1]: http://3.bp.blogspot.com/-peke76gt-wo/Uo7pDIYYeII/AAAAAAAAApo/3Teg6vx8BNU/s1600/router.png
+[1]: https://3.bp.blogspot.com/-peke76gt-wo/Uo7pDIYYeII/AAAAAAAAApo/3Teg6vx8BNU/s1600/router.png
 

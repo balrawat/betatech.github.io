@@ -7,11 +7,11 @@ tags:
   - webdav
 modified_time: '2013-11-18T12:38:19.081+05:30'
 thumbnail: >-
-  http://3.bp.blogspot.com/-87Bo082dbUc/Uom8XNFQRUI/AAAAAAAAAo8/s1M-XuBrPVU/s72-c/webdav.png
+  https://3.bp.blogspot.com/-87Bo082dbUc/Uom8XNFQRUI/AAAAAAAAAo8/s1M-XuBrPVU/s72-c/webdav.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-4324152554104798052'
 blogger_orig_url: 'https://www.linuxtechtips.com/2013/11/webdav-server-setup-ubuntu.html'
 ---
-[![](http://3.bp.blogspot.com/-87Bo082dbUc/Uom8XNFQRUI/AAAAAAAAAo8/s1M-XuBrPVU/s1600/webdav.png)][1]
+[![](https://3.bp.blogspot.com/-87Bo082dbUc/Uom8XNFQRUI/AAAAAAAAAo8/s1M-XuBrPVU/s1600/webdav.png)][1]
 
 **1. Introduction**
 
@@ -45,7 +45,7 @@ In this section we will simply install apache2 and enable WebDAV module. WebDAV 
 
 $ sudo apt-get install apache2
 
-By now your should be able to access your default website located at http://webdav.local. If all goes well disable the default page as we no longer have use for it:
+By now your should be able to access your default website located at https://webdav.local. If all goes well disable the default page as we no longer have use for it:
 
 $ sudo a2dissite default
 
@@ -117,7 +117,7 @@ and finally reload apache2 webserver:
 
 $ sudo service apache2 reload
 
-Now you should be able to navigate your browser to http://webdav.local and see the message: Welcome from WebDAV.local on your screen. This concludes the installation of the apache2 webserver with virtual host webdav.local
+Now you should be able to navigate your browser to https://webdav.local and see the message: Welcome from WebDAV.local on your screen. This concludes the installation of the apache2 webserver with virtual host webdav.local
 
 **5. WebDAV setup**
 
@@ -163,7 +163,7 @@ Alias /svn /var/www/webdav/svn
 
 </Location>
 
-What the above meas is that WebDAV enabled directory /var/www/webdav/svn which will be accessible via http://webdav.local/svn. Do the above modification of your existing /etc/apache2/sites-available/webdav.local config file and restart your apache web server. Here is how the entire /etc/apache2/sites-available/webdav.local file looks like at this stage:
+What the above meas is that WebDAV enabled directory /var/www/webdav/svn which will be accessible via https://webdav.local/svn. Do the above modification of your existing /etc/apache2/sites-available/webdav.local config file and restart your apache web server. Here is how the entire /etc/apache2/sites-available/webdav.local file looks like at this stage:
 
 <VirtualHost *:80>
 
@@ -213,7 +213,7 @@ Alias /svn /var/www/webdav/svn
 
 </VirtualHost>
 
-It is time to test our configuration. One way to do this is to point our browser to http://webdav.local/svn or even better way is to use the cadaver tool. First install cadaver with:
+It is time to test our configuration. One way to do this is to point our browser to https://webdav.local/svn or even better way is to use the cadaver tool. First install cadaver with:
 
 $ sudo apt-get install cadaver
 
@@ -231,7 +231,7 @@ $** dd if=/dev/zero of=mydata.dat bs=1M count=10**
 
 10485760 bytes (10 MB) copied, 0.075726 s, 138 MB/s
 
-$** cadaver http://webdav.local/svn**
+$** cadaver https://webdav.local/svn**
 
 dav:/svn/>** put mydata.dat**
 
@@ -331,7 +331,7 @@ Alias /svn /var/www/webdav/svn
 
 From now on if you try to access your WebDAV server your will need to authenticate yourself first. Here is a WebDAV authentication example:
 
-$ **cadaver http://webdav.local/svn**
+$ **cadaver https://webdav.local/svn**
 
   
 
@@ -393,19 +393,19 @@ and finally mount it with a mount command:
 
   
 
-# **mount.davfs http://webdav.local/svn /mnt/webdav/**
+# **mount.davfs https://webdav.local/svn /mnt/webdav/**
 
   
 
 Please enter the username to authenticate with server
 
-http://webdav.local/svn or hit enter for none.
+https://webdav.local/svn or hit enter for none.
 
   Username: **lubos**
 
 Please enter the password to authenticate user lubos with server
 
-http://webdav.local/svn or hit enter for none.
+https://webdav.local/svn or hit enter for none.
 
   Password:  
 
@@ -429,6 +429,6 @@ This article described a basic configuration of WebDAV service using Apache2 web
 
   
 
-[1]: http://3.bp.blogspot.com/-87Bo082dbUc/Uom8XNFQRUI/AAAAAAAAAo8/s1M-XuBrPVU/s1600/webdav.png
+[1]: https://3.bp.blogspot.com/-87Bo082dbUc/Uom8XNFQRUI/AAAAAAAAAo8/s1M-XuBrPVU/s1600/webdav.png
 [2]: http://httpd.apache.org/docs/2.2/mod/mod_dav.html "apache module mod_dav"
 

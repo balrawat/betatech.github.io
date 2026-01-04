@@ -8,7 +8,7 @@ tags:
   - file system security
 modified_time: '2013-11-27T18:47:00.514+05:30'
 thumbnail: >-
-  http://4.bp.blogspot.com/-PBLFYmYD_GM/UpXtaj1BlCI/AAAAAAAAAtU/7-YOQwdSvu8/s72-c/security.png
+  https://4.bp.blogspot.com/-PBLFYmYD_GM/UpXtaj1BlCI/AAAAAAAAAtU/7-YOQwdSvu8/s72-c/security.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-1373074920066184501'
 blogger_orig_url: 'https://www.linuxtechtips.com/2013/11/file-permissions-in-linux-and-unix.html'
 ---
@@ -25,7 +25,7 @@ You will see that you now get lots of details about the contents of your directo
 
   
 
-[![](http://4.bp.blogspot.com/-PBLFYmYD_GM/UpXtaj1BlCI/AAAAAAAAAtU/7-YOQwdSvu8/s1600/security.png)][1]
+[![](https://4.bp.blogspot.com/-PBLFYmYD_GM/UpXtaj1BlCI/AAAAAAAAAtU/7-YOQwdSvu8/s1600/security.png)][1]
 
   
 
@@ -88,5 +88,5 @@ To give read and write permissions on the file**biglist**to all,
 
   
 
-[1]: http://4.bp.blogspot.com/-PBLFYmYD_GM/UpXtaj1BlCI/AAAAAAAAAtU/7-YOQwdSvu8/s1600/security.png
+[1]: https://4.bp.blogspot.com/-PBLFYmYD_GM/UpXtaj1BlCI/AAAAAAAAAtU/7-YOQwdSvu8/s1600/security.png
 

@@ -42,5 +42,5 @@ More info at [Linux.com][1]
 
   
 
-[1]: http://www.linux.com/learn/new-user-guides/376-linux-is-everywhere-an-overview-of-the-linux-operating-system
+[1]: https://www.linux.com/learn/new-user-guides/376-linux-is-everywhere-an-overview-of-the-linux-operating-system
 

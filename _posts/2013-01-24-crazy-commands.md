@@ -63,5 +63,5 @@ I hope you’ll have some fun trying out these commands, and that they bring you
   
   
 _This Post has been taken from :_  
-_http://www.linuxforu.com/teach-me/tips-tricks/crazy-commands/?phpMyAdmin=1d8b5f958924edce27dfa99df2ab8e99_
+_https://www.linuxforu.com/teach-me/tips-tricks/crazy-commands/?phpMyAdmin=1d8b5f958924edce27dfa99df2ab8e99_
 

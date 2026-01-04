@@ -9,11 +9,11 @@ tags:
   - shell
 modified_time: '2013-12-10T12:54:12.635+05:30'
 thumbnail: >-
-  http://1.bp.blogspot.com/-TSttgbtVw3A/UqbA2X7aGcI/AAAAAAAAAvs/Y-GsqsP_hUA/s72-c/regex.png
+  https://1.bp.blogspot.com/-TSttgbtVw3A/UqbA2X7aGcI/AAAAAAAAAvs/Y-GsqsP_hUA/s72-c/regex.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-3977219890417873051'
 blogger_orig_url: 'https://www.linuxtechtips.com/2013/12/working-with-regular-expressions.html'
 ---
-[![](http://1.bp.blogspot.com/-TSttgbtVw3A/UqbA2X7aGcI/AAAAAAAAAvs/Y-GsqsP_hUA/s640/regex.png)][1]
+[![](https://1.bp.blogspot.com/-TSttgbtVw3A/UqbA2X7aGcI/AAAAAAAAAvs/Y-GsqsP_hUA/s640/regex.png)][1]
 
   
 
@@ -161,5 +161,5 @@ When using square brackets, some characters can have different meanings dependin
 
   
 
-[1]: http://1.bp.blogspot.com/-TSttgbtVw3A/UqbA2X7aGcI/AAAAAAAAAvs/Y-GsqsP_hUA/s1600/regex.png
+[1]: https://1.bp.blogspot.com/-TSttgbtVw3A/UqbA2X7aGcI/AAAAAAAAAvs/Y-GsqsP_hUA/s1600/regex.png
 

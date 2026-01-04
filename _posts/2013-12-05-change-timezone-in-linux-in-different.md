@@ -8,12 +8,12 @@ tags:
   - set timezone in linux
 modified_time: '2013-12-06T11:51:49.804+05:30'
 thumbnail: >-
-  http://2.bp.blogspot.com/-F0NMVHr_ZcA/UqARQNuwSxI/AAAAAAAAAvY/M1FEGXrVXd8/s72-c/timezone.png
+  https://2.bp.blogspot.com/-F0NMVHr_ZcA/UqARQNuwSxI/AAAAAAAAAvY/M1FEGXrVXd8/s72-c/timezone.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-8736389288405661849'
 blogger_orig_url: >-
   https://www.linuxtechtips.com/2013/12/change-timezone-in-linux-in-different.html
 ---
-[![](http://2.bp.blogspot.com/-F0NMVHr_ZcA/UqARQNuwSxI/AAAAAAAAAvY/M1FEGXrVXd8/s640/timezone.png)][1]
+[![](https://2.bp.blogspot.com/-F0NMVHr_ZcA/UqARQNuwSxI/AAAAAAAAAvY/M1FEGXrVXd8/s640/timezone.png)][1]
 
   
 
@@ -101,5 +101,5 @@ Fri Sep 7 07:46:30 PHT 2012
 
   
 
-[1]: http://2.bp.blogspot.com/-F0NMVHr_ZcA/UqARQNuwSxI/AAAAAAAAAvY/M1FEGXrVXd8/s1600/timezone.png
+[1]: https://2.bp.blogspot.com/-F0NMVHr_ZcA/UqARQNuwSxI/AAAAAAAAAvY/M1FEGXrVXd8/s1600/timezone.png
 

@@ -8,12 +8,12 @@ tags:
   - cryptoloop
 modified_time: '2013-11-20T10:31:19.684+05:30'
 thumbnail: >-
-  http://4.bp.blogspot.com/--_13QzBVEG4/Uom95pGEq7I/AAAAAAAAApI/9AfGJaQ4U4s/s72-c/loop.png
+  https://4.bp.blogspot.com/--_13QzBVEG4/Uom95pGEq7I/AAAAAAAAApI/9AfGJaQ4U4s/s72-c/loop.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-8463814954141109069'
 blogger_orig_url: >-
   https://www.linuxtechtips.com/2013/11/how-to-encrypt-partition-with-cryptoloop.html
 ---
-[![](http://4.bp.blogspot.com/--_13QzBVEG4/Uom95pGEq7I/AAAAAAAAApI/9AfGJaQ4U4s/s1600/loop.png)][1]
+[![](https://4.bp.blogspot.com/--_13QzBVEG4/Uom95pGEq7I/AAAAAAAAApI/9AfGJaQ4U4s/s1600/loop.png)][1]
 
   
 
@@ -161,5 +161,5 @@ You can find many other crypto utilities available on your Linux system. One wor
 
   
 
-[1]: http://4.bp.blogspot.com/--_13QzBVEG4/Uom95pGEq7I/AAAAAAAAApI/9AfGJaQ4U4s/s1600/loop.png
+[1]: https://4.bp.blogspot.com/--_13QzBVEG4/Uom95pGEq7I/AAAAAAAAApI/9AfGJaQ4U4s/s1600/loop.png
 

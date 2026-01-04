@@ -22,8 +22,8 @@ The first step requires downloading some RPM files that contain the additional Y
 
 ****Centos 5.x****
 
-**wget http://dl.fedoraproject.org/pub/epel/5/i386/epel-release-5-4.noarch.rpm  
-wget http://rpms.famillecollet.com/enterprise/remi-release-5.rpm  
+**wget https://dl.fedoraproject.org/pub/epel/5/i386/epel-release-5-4.noarch.rpm  
+wget https://rpms.famillecollet.com/enterprise/remi-release-5.rpm  
 sudo rpm -Uvh remi-release-5*.rpm epel-release-5*.rpm **
 
   
@@ -32,8 +32,8 @@ sudo rpm -Uvh remi-release-5*.rpm epel-release-5*.rpm **
 
   
 
-**wget http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm  
-wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm  
+**wget https://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm  
+wget https://rpms.famillecollet.com/enterprise/remi-release-6.rpm  
 sudo rpm -Uvh remi-release-6*.rpm epel-release-6*.rpm**
 
   
@@ -60,8 +60,8 @@ sudo vim /etc/yum.repos.d/remi.repo
 Edit the**\[remi\]**portion of the file so that the_enabled_option is set to_1_.  This will enable the remi repository.  
   
 **name=Les RPM de remi pour Enterprise Linux $releasever - $basearch  
-#baseurl=http://rpms.famillecollet.com/enterprise/$releasever/remi/$basearch/  
-mirrorlist=http://rpms.famillecollet.com/enterprise/$releasever/remi/mirror  
+#baseurl=https://rpms.famillecollet.com/enterprise/$releasever/remi/$basearch/  
+mirrorlist=https://rpms.famillecollet.com/enterprise/$releasever/remi/mirror  
 enabled=1  
 gpgcheck=1  
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi  
@@ -77,5 +77,5 @@ _Credits:_
 
 _============_
 
-_This article is taken from http://www.rackspace.com/knowledge_center/article/installing-rhel-epel-repo-on-centos-5x-or-6x_
+_This article is taken from https://www.rackspace.com/knowledge_center/article/installing-rhel-epel-repo-on-centos-5x-or-6x_
 

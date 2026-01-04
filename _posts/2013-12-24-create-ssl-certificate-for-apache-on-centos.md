@@ -12,12 +12,12 @@ tags:
 imagefeature: https.png
 modified_time: '2013-12-24T17:33:21.440+05:30'
 thumbnail: >-
-  http://4.bp.blogspot.com/--423qayIOoI/Url318RK0UI/AAAAAAAAAyA/1hJ7-8pAsE8/s72-c/https.png
+  https://4.bp.blogspot.com/--423qayIOoI/Url318RK0UI/AAAAAAAAAyA/1hJ7-8pAsE8/s72-c/https.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-8075590793322239754'
 blogger_orig_url: >-
   https://www.linuxtechtips.com/2013/12/create-ssl-certificate-for-apache-on-centos.html
 ---
-[![](http://4.bp.blogspot.com/--423qayIOoI/Url318RK0UI/AAAAAAAAAyA/1hJ7-8pAsE8/s1600/https.png)][1]
+[![](https://4.bp.blogspot.com/--423qayIOoI/Url318RK0UI/AAAAAAAAAyA/1hJ7-8pAsE8/s1600/https.png)][1]
 
 **About Self-Signed Certificates**
 
@@ -169,5 +169,5 @@ In your browser, type _**https://youraddress**_ to view the new certificate.
 
   
 
-[1]: http://4.bp.blogspot.com/--423qayIOoI/Url318RK0UI/AAAAAAAAAyA/1hJ7-8pAsE8/s1600/https.png
+[1]: https://4.bp.blogspot.com/--423qayIOoI/Url318RK0UI/AAAAAAAAAyA/1hJ7-8pAsE8/s1600/https.png
 

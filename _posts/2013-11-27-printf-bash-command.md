@@ -8,11 +8,11 @@ tags:
   - bash
 modified_time: '2013-11-28T13:50:45.291+05:30'
 thumbnail: >-
-  http://4.bp.blogspot.com/-CpnudH_9ne0/UpXiolEQjNI/AAAAAAAAAsg/PR1VTevpSAU/s72-c/printf.png
+  https://4.bp.blogspot.com/-CpnudH_9ne0/UpXiolEQjNI/AAAAAAAAAsg/PR1VTevpSAU/s72-c/printf.png
 blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-2663289629123986703'
 blogger_orig_url: 'https://www.linuxtechtips.com/2013/11/printf-bash-command.html'
 ---
-[![](http://4.bp.blogspot.com/-CpnudH_9ne0/UpXiolEQjNI/AAAAAAAAAsg/PR1VTevpSAU/s1600/printf.png)][1]
+[![](https://4.bp.blogspot.com/-CpnudH_9ne0/UpXiolEQjNI/AAAAAAAAAsg/PR1VTevpSAU/s1600/printf.png)][1]
 
   
 
@@ -178,5 +178,5 @@ Output:
 
   
 
-[1]: http://4.bp.blogspot.com/-CpnudH_9ne0/UpXiolEQjNI/AAAAAAAAAsg/PR1VTevpSAU/s1600/printf.png
+[1]: https://4.bp.blogspot.com/-CpnudH_9ne0/UpXiolEQjNI/AAAAAAAAAsg/PR1VTevpSAU/s1600/printf.png
 
