@@ -14,239 +14,139 @@ blogger_id: 'tag:blogger.com,1999:blog-6814921223515313000.post-8282490906839104
 blogger_orig_url: >-
   https://www.linuxtechtips.com/2014/01/install-and-configure-csf-firewall-linux.html
 ---
-[![](http://3.bp.blogspot.com/-T8XgsbBagfQ/Usfac0nvdQI/AAAAAAAAAys/sqZHhsgKGZA/s640/install-csf.png)][1]
+![Config Server Firewall]({{ site.url }}/images/install-csf.png)
 
-**Introduction**
-
-* * *
+## Introduction
 
 Config Server Firewall (or CSF) is a free and advanced firewall for most Linux distributions. In addition to the basic functionality of a firewall – filtering packets – CSF includes other security features, such as login/intrusion/flood detections. CSF includes UI integration for cPanel, DirectAdmin and Webmin, but this tutorial only covers the command line usage. CSF is able to recognize many attacks, such as port scans, SYN floods, and login brute force attacks on many services. It is configured to temporarily block clients who are detected to be attacking the cloud server.
 
-  
-
-The full list of supported operating systems and features can be found on [ConfigServer's website][2].
-
-  
+The full list of supported operating systems and features can be found on [ConfigServer's website][2].
 
 This tutorial is written for Debian based distro, such as Debian and Ubuntu but should work on RHEL/CentOS also. The commands should be executed with root permissions, by logging in as root, or initiating a root shell with the following command if sudo is installed:
 
-  
-
+```bash
 sudo su
+```
 
-Features
-
-* * *
+## Features
 
 Config Server Firewall offers a wide range of protections for your Server.
 
-  
-
-**
-
-**Login authentication failure daemon:**
-
-**
+### Login authentication failure daemon
 
 CSF checks the logs for failed login attempts at regular time interval, and is able to recognize most unauthorized attempts to gain access to your cloud server. You can define the desired action CSF takes and after how many attempts in the configuration file.
 
-  
-
 The following applications are supported by this feature:
 
-  
-
-· Courier imap, Dovecot, uw-imap, Kerio
-
-· openSSH
-
-· cPanel, WHM, Webmail (cPanel servers only)
-
-· Pure-ftpd, vsftpd, Proftpd
-
-· Password protected web pages (htpasswd)
-
-· Mod_security failures (v1 and v2)
-
-· Suhosin failures
-
-· Exim SMTP AUTH
+- Courier imap, Dovecot, uw-imap, Kerio
+- openSSH
+- cPanel, WHM, Webmail (cPanel servers only)
+- Pure-ftpd, vsftpd, Proftpd
+- Password protected web pages (htpasswd)
+- Mod_security failures (v1 and v2)
+- Suhosin failures
+- Exim SMTP AUTH
 
 In addition to these, you are able define your own login files with regular expression matching. This can be helpful if you have an application which logs failed logins, but does block the user after specific number of attempts.
 
-  
-
-**
-
-**Process tracking**
-
-**
+### Process tracking
 
 CSF can be configured to track processes in order to detect suspicious processes or open network ports, and send an email to the system administrator if any is detected. This may help you to identify and stop a possible exploit on your Server.
 
-  
-
-**
-
-**Directory watching**
-
-**
+### Directory watching
 
 Directory watching monitors the /temp and other relevant folders for malicious scripts, and sends an email to the system administrator when one is detected.
 
-  
-
-**
-
-**Messenger service**
-
-**
+### Messenger service
 
 Enabling this feature allows CSF to send a more informative message to the client when a block is applied. This feature has both pros and cons. On one hand, enabling it provides more information to the client, and thus may cause less frustration for instance in case of failed logins. On the other hand, this provides more information, which might make it easier for an attacker to attack your Server.
 
-  
-
-**
-
-**Port flood protection**
-
-**
+### Port flood protection
 
 This setting provides protection against port flood attacks, such as denial of service (DoS) attacks. You may specify the amount of allowed connections on each port within time period of your liking. Enabling this feature is recommended, as it may possibly prevent an attacker forcing your services down. You should pay attention to what limits you set, as too restrictive settings will drop connections from normal clients. Then again, too permissive settings may allow an attacker to succeed in a flood attack.
 
-  
-
-**
-
-**Port knocking**
-
-**
+### Port knocking
 
 Port knocking allows clients to establish connections a server with no ports open. The server allows clients connect to the main ports only after a successful port knock sequence. You may find this useful if you offer services which are available to only limited audience.
 
-  
-
 [Read more about port knocking][3]
 
-  
+### Connection limit protection
 
-**
+This feature can be used to limit the number concurrent of active connections from an IP address to each port. When properly configured, this may prevent abuses on the server, such as DoS attacks.
 
-**Connection limit protection**
-
-**
-
-This feature can be used to limit the number concurrent of active connections from an IP address to each port. When properly configured, this may prevent abuses on the server, such as DoS attacks. 
-
-  
-
-**
-
-**Port/IP address redirection**
-
-**
+### Port/IP address redirection
 
 CSF can be configured to redirect connections to an IP/port to another IP/port. Note: After redirection, the source address of the client will be the server's IP address. This is not an equivalent to network address translation (NAT).
 
-  
-
-**
-
-**UI integration**
-
-**
+### UI integration
 
 In addition to command line interface, CSF also offers UI integration for cPanel and Webmin. If you are not familiar with Linux command line, you might find this feature helpful.
 
-  
-
-**
-
-**IP block lists**
-
-**
+### IP block lists
 
 This feature allows CSF to download lists of blocked IP addresses automatically from sources defined by you.
 
-  
+## Installing ConfigServer Firewall
 
-  
-
-Installing ConfigServer Firewall
-
-* * *
-
-Step 1: Downloading
-
-* * *
+### Step 1: Downloading
 
 Config Server Firewall is not currently available in Debian or Ubuntu repositories, and has to be downloaded from the ConfigServer's website.
 
-wget [http://www.configserver.com/free/csf.tgz][4]
+```bash
+wget http://www.configserver.com/free/csf.tgz
+```
 
 This will download CSF to your current working directory.
 
-Step 2: Uncompressing
-
-* * *
+### Step 2: Uncompressing
 
 The downloaded file is a compressed from of tar package, and has to be uncompressed and extracted before it can be used.
 
+```bash
 tar -xzf csf.tgz
+```
 
-Step 3: Installing
-
-* * *
+### Step 3: Installing
 
 If you are using another firewall configuration scripts, such as UFW, you should disable it before proceeding. Iptables rules are automatically removed.
 
-  
-
 UFW can be disabled by running the following command:
 
-  
-
+```bash
 ufw disable
-
-  
+```
 
 Now it is time to execute the CSF's installer script.
 
-  
-
+```bash
 cd csf
-
 sh install.sh
-
-  
+```
 
 The firewall is now installed, but you should check if the required iptables modules are available.
 
-  
-
+```bash
 perl /usr/local/csf/bin/csftest.pl
-
-  
+```
 
 The firewall will work if no fatal errors are reported.
 
-  
+> **Note:** Your IP address was added to the whitelist if possible. In addition, the SSH port has been opened automatically, even if it uses custom port. The firewall was also configured to have testing mode enabled, which means that the iptables rules will be automatically removed five minutes after starting CSF. This should be disabled once you know that your configuration works, and you will not be locked out.
 
-Note: Your IP address was added to the whitelist if possible. In addition, the SSH port has been opened automatically, even if it uses custom port. The firewall was also configured to have testing mode enabled, which means that the iptables rules will be automatically removed five minutes after starting CSF. This should be disabled once you know that your configuration works, and you will not be locked out.
-
-  
-
-Basic Configuration
-
-* * *
+## Basic Configuration
 
 CSF can be configured by editing its configuration file csf.conf in /etc/csf:
 
+```bash
 nano /etc/csf/csf.conf
+```
 
 The changes can be applied with command:
 
+```bash
 csf -r
+```
 
 Step 1: Configuring ports
 
@@ -580,11 +480,11 @@ csf -r
 
   
 
-[1]: http://3.bp.blogspot.com/-T8XgsbBagfQ/Usfac0nvdQI/AAAAAAAAAys/sqZHhsgKGZA/s1600/install-csf.png
-[2]: http://www.configserver.com/cp/csf.html
-[3]: http://www.portknocking.org/
-[4]: http://www.configserver.com/free/csf.tgz
+[1]: https://www.configserver.com/cp/csf.html
+[2]: https://www.configserver.com/cp/csf.html
+[3]: https://www.portknocking.org/
+[4]: https://www.configserver.com/free/csf.tgz
 [5]: https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers
-[6]: http://2.3.0.0/16
-[7]: http://en.wikipedia.org/wiki/CIDR_notation#CIDR_notation
+[6]: https://en.wikipedia.org/wiki/CIDR_notation#CIDR_notation
+[7]: https://en.wikipedia.org/wiki/CIDR_notation#CIDR_notation
 

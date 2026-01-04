@@ -193,11 +193,27 @@ html, body, .notepad-post-container, .notepad-post-header {
       @media only screen and (min-width: 70em) {
         .post-template .notepad-post-content > div:not(.notepad-post-title) {
           margin: -10% auto 0; } }
-      .post-template .notepad-post-content > div:not(.notepad-post-title) a, .post-template .notepad-post-content > div:not(.notepad-post-title) code {
-        color: #e51843; }
+      .post-template .notepad-post-content > div:not(.notepad-post-title) a {
+        color: #e51843;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(229, 24, 67, 0.3);
+        transition: border-color 0.2s ease; }
+        .post-template .notepad-post-content > div:not(.notepad-post-title) a:hover {
+          border-bottom-color: #e51843; }
+      .post-template .notepad-post-content > div:not(.notepad-post-title) code {
+        background-color: #f5f5f5;
+        padding: 0.2em 0.4em;
+        border-radius: 3px;
+        font-size: 0.9em;
+        color: #e51843;
+        font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace; }
       .post-template .notepad-post-content > div:not(.notepad-post-title) ul, .post-template .notepad-post-content > div:not(.notepad-post-title) ol {
-        padding-left: 1.25rem;
-        font-size: 1.125rem; }
+        padding-left: 2rem;
+        font-size: 1.125rem;
+        line-height: 1.8;
+        margin-bottom: 1.5em; }
+        .post-template .notepad-post-content > div:not(.notepad-post-title) ul li, .post-template .notepad-post-content > div:not(.notepad-post-title) ol li {
+          margin-bottom: 0.5em; }
       .post-template .notepad-post-content > div:not(.notepad-post-title) h1, .post-template .notepad-post-content > div:not(.notepad-post-title) h2, .post-template .notepad-post-content > div:not(.notepad-post-title) h3, .post-template .notepad-post-content > div:not(.notepad-post-title) h4, .post-template .notepad-post-content > div:not(.notepad-post-title) h5, .post-template .notepad-post-content > div:not(.notepad-post-title) h6 {
         font-weight: bold; }
       .post-template .notepad-post-content > div:not(.notepad-post-title) h1, .post-template .notepad-post-content > div:not(.notepad-post-title) h2, .post-template .notepad-post-content > div:not(.notepad-post-title) h3, .post-template .notepad-post-content > div:not(.notepad-post-title) h4, .post-template .notepad-post-content > div:not(.notepad-post-title) h5, .post-template .notepad-post-content > div:not(.notepad-post-title) h6, .post-template .notepad-post-content > div:not(.notepad-post-title) ul, .post-template .notepad-post-content > div:not(.notepad-post-title) ol, .post-template .notepad-post-content > div:not(.notepad-post-title) blockquote, .post-template .notepad-post-content > div:not(.notepad-post-title) pre, .post-template .notepad-post-content > div:not(.notepad-post-title) hr {
@@ -207,7 +223,9 @@ html, body, .notepad-post-container, .notepad-post-header {
       .post-template .notepad-post-content > div:not(.notepad-post-title) p {
         margin: 0 auto 2em auto;
         max-width: 56.25rem;
-        font-size: 1.125rem; }
+        font-size: 1.125rem;
+        line-height: 1.8;
+        color: #333; }
         .post-template .notepad-post-content > div:not(.notepad-post-title) p:first-child {
           font-size: 1.375rem;
           font-weight: 300; }
@@ -531,11 +549,93 @@ html, body, .notepad-post-container, .notepad-post-header {
 
 pre {
   word-wrap: break-word;
-  margin-bottom: 1.5625rem; }
+  margin-bottom: 1.5625rem;
+  padding: 1.5rem;
+  background-color: #2d2d2d;
+  color: #f8f8f2;
+  border-radius: 5px;
+  overflow-x: auto;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+  pre code {
+    background-color: transparent;
+    padding: 0;
+    color: inherit;
+    font-size: inherit;
+    border-radius: 0; }
 
 code {
   font-size: 0.9375rem;
-  line-height: 1.2; }
+  line-height: 1.2;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace; }
+
+blockquote {
+  border-left: 4px solid #e51843;
+  padding-left: 1.5rem;
+  margin: 2em auto;
+  max-width: 56.25rem;
+  font-style: italic;
+  color: #666;
+  background-color: #f9f9f9;
+  padding: 1rem 1.5rem;
+  border-radius: 3px; }
+
+.post-template .notepad-post-content > div:not(.notepad-post-title) img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 2em auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .post-template .notepad-post-content > div:not(.notepad-post-title) img:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
+
+.post-template .notepad-post-content > div:not(.notepad-post-title) h1,
+.post-template .notepad-post-content > div:not(.notepad-post-title) h2,
+.post-template .notepad-post-content > div:not(.notepad-post-title) h3,
+.post-template .notepad-post-content > div:not(.notepad-post-title) h4,
+.post-template .notepad-post-content > div:not(.notepad-post-title) h5,
+.post-template .notepad-post-content > div:not(.notepad-post-title) h6 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  line-height: 1.3;
+  color: #222; }
+
+.post-template .notepad-post-content > div:not(.notepad-post-title) h2 {
+  font-size: 2rem;
+  border-bottom: 2px solid #e51843;
+  padding-bottom: 0.5em; }
+
+.post-template .notepad-post-content > div:not(.notepad-post-title) h3 {
+  font-size: 1.5rem;
+  color: #444; }
+
+.post-template .notepad-post-content > div:not(.notepad-post-title) hr {
+  border: none;
+  border-top: 2px solid #e5e5e5;
+  margin: 3em auto;
+  max-width: 56.25rem; }
+
+.post-template .notepad-post-content > div:not(.notepad-post-title) table {
+  width: 100%;
+  max-width: 56.25rem;
+  margin: 2em auto;
+  border-collapse: collapse;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+  .post-template .notepad-post-content > div:not(.notepad-post-title) table th {
+    background-color: #e51843;
+    color: white;
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: 600; }
+  .post-template .notepad-post-content > div:not(.notepad-post-title) table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e5e5e5; }
+  .post-template .notepad-post-content > div:not(.notepad-post-title) table tr:hover {
+    background-color: #f9f9f9; }
 
 iframe {
   border: 0; }
