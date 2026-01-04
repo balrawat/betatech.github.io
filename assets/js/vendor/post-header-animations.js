@@ -72,7 +72,7 @@
             isRevealed, 
             noscroll,
             isAnimating,
-            container = document.getElementById( 'notepad-post-container' ) || document,
+            container = document.getElementById( 'notepad-post-container' ) || document.getElementById( 'main-content' ) || document,
             trigger = container.querySelector( 'button.trigger' );
 
         function scrollY() {
@@ -125,7 +125,9 @@
                     noscroll = false;
                     enable_scroll();
                 }
-                BackgroundCheck.refresh();
+                if (typeof BackgroundCheck !== 'undefined' && BackgroundCheck.refresh) {
+                    BackgroundCheck.refresh();
+                }
             }, 600 );
         }
 
@@ -133,17 +135,35 @@
         var pageScroll = scrollY();
         noscroll = pageScroll === 0;
 
-        disable_scroll();
-
         if( pageScroll ) {
             isRevealed = true;
             $(container).addClass('notrans');
             $(container).addClass('modify');
+            enable_scroll();
+        } else {
+            // Only disable scroll if we have a trigger button and container
+            if (trigger && container && container !== document) {
+                disable_scroll();
+            } else {
+                // No trigger button or container not found - auto-reveal content
+                isRevealed = true;
+                $(container).addClass('modify');
+                enable_scroll();
+            }
         }
+        
+        // Auto-reveal after a short delay if content is still hidden
+        setTimeout(function() {
+            if (!isRevealed && container && container !== document) {
+                toggle(1);
+            }
+        }, 500);
 
         window.addEventListener( 'scroll', scrollPage );
 
-        trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
+        if (trigger) {
+            trigger.addEventListener( 'click', function() { toggle( 1 ); } );
+        }
     
     }
 
